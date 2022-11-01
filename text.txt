@@ -1,33 +1,26 @@
-<div class="mt-4">
-     <button class="btn btn-success submit-btn">Continue <i class="fa-solid fa-arrow-right ms-1"></i></button>
-</div>
-
-<div class="apply-form-header">
-    <div class="apply-form-step">
-        <div class="step step-complete">
-            <p class="nom mx-auto">1</p><span>Start</span>
-        </div>
-        <div class="step step-complete">
-            <p class="nom mx-auto">2</p><span>Resume</span>
-        </div>
-        <div class="step step-active">
-            <p class="nom mx-auto">3</p><span>Declaration</span>
-        </div>
-        <div class="step">
-            <p class="nom mx-auto">4</p><span>Asset & Liabilities</span>
-        </div>
-        <div class="step">
-            <p class="nom mx-auto">5</p></i> <span>Property Information</span>
-        </div>
-        <div class="step">
-            <p class="nom mx-auto">6</p><span>Business Information</span>
-        </div>
-        <div class="step">
-           <p class="nom mx-auto">7</p><span>Signature & Authorization</span>
-        </div>
-    </div>
- </div>
- 
-<div class="progress" style="height: 5px;">
-  <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 36%;height: 5px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
+                <button
+                    class="d-flex info-step"
+                    id="v-pills-authorization-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-business"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-business"
+                    aria-selected="false"
+                  >
+                    <p class="step-num">6</p>
+                    <p class="step-name">Business Information</p>
+                  </button>
+                  <button
+                    class="d-flex info-step"
+                    id="v-pills-authorization-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-authorization"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-authorization"
+                    aria-selected="false"
+                  >
+                    <p class="step-num">6</p>
+                    <p class="step-name">Signature & Authorization</p>
+                  </button>
