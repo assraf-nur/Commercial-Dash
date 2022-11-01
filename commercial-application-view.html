@@ -1,671 +1,1075 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/9c393abfb6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/CSS/styles.css" />
-    <link class="icon" rel="icon" type="image/x-icon" href="/Images/Icon/logo.ico" />
-    <title>Commercial Loan</title>
-  </head>
 
-  <body>
-    <div class="d-flex" id="wrapper">
-      <!-- Sidebar -->
-      <div class="bg-white" id="sidebar-wrapper">
-        <div
-          class="sidebar-heading text-center py-4 text-light primary-text fs-5 fw-bold text-uppercase"
-        >
-          Commercial Loan
-        </div>
-        <div class="card">
-          <img class="mx-auto" src="./Images/profile-pic.png" alt="" />
-          <h5>Elina Jahan Eli</h5>
-          <p>Customer Admin</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/9c393abfb6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/CSS/styles.css" />
+  <link class="icon" rel="icon" type="image/x-icon" href="/Images/Icon/logo.ico" />
+  <title>Commercial Loan</title>
+</head>
 
-        <hr class="side-hr" />
-        <div class="list-group list-group-flush my-3">
-          <a href="index.html" class="side-option">
-            <img class="me-2" src="./Images/SVG/dash.svg" alt="" />Dashboard</a
-          >
-        </div>
-        <hr class="side-hr" />
-        <div class="list-group list-group-flush my-3">
-          <a href="documents.html" class="side-option d-flex">
-            <div>
-              <img class="me-2 doc" src="./Images/SVG/black-doc.svg" alt="" />
-            </div>
-            <div>Documents</div>
-          </a>
-        </div>
-
-        <hr class="side-hr" />
-        <div class="list-group list-group-flush my-3">
-          <a
-            data-bs-toggle="collapse"
-            href="#collapseExample"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-            href="#"
-            class="side-option d-flex"
-          >
-            <div>
-              <img class="me-2 doc" src="./Images/SVG/business-loan-application.svg" alt="" />
-            </div>
-            <div>Business Loan Application</div>
-            <div class="drop-icon">
-              <i class="fa-solid fa-caret-down"></i>
-            </div>
-          </a>
-          <div class="collapse px-3" id="collapseExample">
-            <div class="business-loan-options">
-              <a class="mt-1" href="./application-edit.html"
-                ><i class="fa-solid fa-pen-to-square"></i>
-                Application Edit
-              </a>
-              <hr class="mt-2 mb-1" />
-              <a href="./application-view.html"
-                ><i class="fa-solid fa-file-contract me-1"></i> Application View</a
-              >
-            </div>
-          </div>
-        </div>
-        <hr class="side-hr" />
-        <div class="list-group list-group-flush my-3">
-          <a
-            data-bs-toggle="collapse"
-            href="#collapseExample2"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-            href="#"
-            class="side-option d-flex"
-          >
-            <div>
-              <img class="me-2 doc" src="./Images/SVG/residentian-investment.svg" alt="" />
-            </div>
-            <div>Residential Loan Application</div>
-            <div class="drop-icon">
-              <i class="fa-solid fa-caret-down"></i>
-            </div>
-          </a>
-          <div class="collapse px-3" id="collapseExample2">
-            <div class="business-loan-options">
-              <a class="mt-1" href="/residencial-application-edit.html"
-                ><i class="fa-solid fa-pen-to-square"></i> Application Edit</a
-              >
-              <hr class="mt-2 mb-1" />
-              <a href="/residencial-appication-view.html"
-                ><i class="fa-solid fa-file-contract me-1"></i> Application View</a
-              >
-            </div>
-          </div>
-        </div>
-        <hr class="side-hr" />
-        <div class="list-group list-group-flush my-3">
-          <a
-            data-bs-toggle="collapse"
-            href="#collapseExample3"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-            class="side-option d-flex actv"
-          >
-            <div>
-              <img class="me-2 doc" src="./Images/SVG/color-house.svg" alt="" />
-            </div>
-            <div>Commercial Loan Application</div>
-            <div class="drop-icon">
-              <i class="fa-solid fa-caret-down"></i>
-            </div>
-          </a>
-          <div class="collapse show px-3" id="collapseExample3">
-            <div class="business-loan-options">
-              <a class="mt-1" href="./commercial-application-edit.html"
-                ><i class="fa-solid fa-pen-to-square"></i> Application Edit</a
-              >
-              <hr class="mt-2 mb-1" />
-              <a href="./commercial-application-view.html">
-                <i class="fa-solid fa-file-contract me-1"></i>
-                Application View<i class="fa-solid fa-circle ms-1"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <hr class="side-hr" />
+<body>
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-white" id="sidebar-wrapper">
+      <div class="sidebar-heading text-center py-4 text-light primary-text fs-5 fw-bold text-uppercase">
+        Commercial Loan
       </div>
-      <!-- /#sidebar-wrapper -->
+      <div class="card">
+        <img class="mx-auto" src="./Images/profile-pic.png" alt="" />
+        <h5>Elina Jahan Eli</h5>
+        <p>Customer Admin</p>
+      </div>
 
-      <!-- Page Content -->
-      <div id="page-content-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4">
-          <div class="d-flex align-items-center">
-            <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+      <hr class="side-hr" />
+      <div class="list-group list-group-flush my-3">
+        <a href="index.html" class="side-option">
+          <img class="me-2" src="./Images/SVG/dash.svg" alt="" />Dashboard</a>
+      </div>
+      <hr class="side-hr" />
+      <div class="list-group list-group-flush my-3">
+        <a href="documents.html" class="side-option d-flex">
+          <div>
+            <img class="me-2 doc" src="./Images/SVG/black-doc.svg" alt="" />
           </div>
+          <div>Documents</div>
+        </a>
+      </div>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="search-form" action="">
-              <input class="px-3 py-2" type="search" placeholder="Search for results..." />
-              <button class="px-3 py-2">
-                <i class="fa-solid fa-magnifying-glass mt-1"></i>
-              </button>
-            </form>
-
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle second-text fw-bold"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="fas fa-user me-2"></i>John Doe
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">Profile</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Settings</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Logout</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <a class="login-option" href="./login.html">Login</a>
-            <div class="icons">
-              <button class="ms-3" href="">
-                <i class="fa-solid fa-phone"></i>
-              </button>
-              <button class="ms-3" href="">
-                <i class="fa-solid fa-message"></i>
-              </button>
-              <button
-                class="ms-3 me-3"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"
-                href=""
-              >
-                <i
-                  class="fa-solid fa-bell type="
-                  button
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasRight"
-                  aria-controls="offcanvasRight"
-                ></i>
-              </button>
-            </div>
+      <hr class="side-hr" />
+      <div class="list-group list-group-flush my-3">
+        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+          aria-controls="collapseExample" href="#" class="side-option d-flex">
+          <div>
+            <img class="me-2 doc" src="./Images/SVG/business-loan-application.svg" alt="" />
           </div>
-        </nav>
-
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasRight"
-          aria-labelledby="offcanvasRightLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Notification panel</h5>
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+          <div>Business Loan Application</div>
+          <div class="drop-icon">
+            <i class="fa-solid fa-caret-down"></i>
           </div>
-          <div class="offcanvas-body">...</div>
+        </a>
+        <div class="collapse px-3" id="collapseExample">
+          <div class="business-loan-options">
+            <a class="mt-1" href="./application-edit.html"><i class="fa-solid fa-pen-to-square"></i>
+              Application Edit
+            </a>
+            <hr class="mt-2 mb-1" />
+            <a href="./application-view.html"><i class="fa-solid fa-file-contract me-1"></i> Application View</a>
+          </div>
+        </div>
+      </div>
+      <hr class="side-hr" />
+      <div class="list-group list-group-flush my-3">
+        <a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+          aria-controls="collapseExample" href="#" class="side-option d-flex">
+          <div>
+            <img class="me-2 doc" src="./Images/SVG/residentian-investment.svg" alt="" />
+          </div>
+          <div>Residential Loan Application</div>
+          <div class="drop-icon">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </a>
+        <div class="collapse px-3" id="collapseExample2">
+          <div class="business-loan-options">
+            <a class="mt-1" href="/residencial-application-edit.html"><i class="fa-solid fa-pen-to-square"></i>
+              Application Edit</a>
+            <hr class="mt-2 mb-1" />
+            <a href="/residencial-appication-view.html"><i class="fa-solid fa-file-contract me-1"></i> Application
+              View</a>
+          </div>
+        </div>
+      </div>
+      <hr class="side-hr" />
+      <div class="list-group list-group-flush my-3">
+        <a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+          aria-controls="collapseExample" class="side-option d-flex actv">
+          <div>
+            <img class="me-2 doc" src="./Images/SVG/color-house.svg" alt="" />
+          </div>
+          <div>Commercial Loan Application</div>
+          <div class="drop-icon">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </a>
+        <div class="collapse show px-3" id="collapseExample3">
+          <div class="business-loan-options">
+            <a class="mt-1" href="./commercial-application-edit.html"><i class="fa-solid fa-pen-to-square"></i>
+              Application Edit</a>
+            <hr class="mt-2 mb-1" />
+            <a href="./commercial-application-view.html">
+              <i class="fa-solid fa-file-contract me-1"></i>
+              Application View<i class="fa-solid fa-circle ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="side-hr" />
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4">
+        <div class="d-flex align-items-center">
+          <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
         </div>
 
-        <div id="file-container" class="bg-body mt-4 ms-4 me-4 rounded p-3">
-          <h5>Information View</h5>
-          <hr class="" />
-          <div class="mt-2 px-3 mb-5">
-            <div class="row align-items-start">
-              <div class="col-xl-4">
-                <div
-                  class="nav flex-column nav-pills me-3"
-                  id="v-pills-tab"
-                  role="tablist"
-                  aria-orientation="vertical"
-                >
-                  <button
-                    class="active d-flex info-step"
-                    id="v-pills-personal-information-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-personal-information"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-personal-information"
-                    aria-selected="true"
-                  >
-                    <p class="step-num">1</p>
-                    <p class="step-name">Personal Information</p>
-                  </button>
-                  <button
-                    class="d-flex info-step"
-                    id="v-pills-business-information-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-business-information"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-business-information"
-                    aria-selected="false"
-                  >
-                    <p class="step-num">2</p>
-                    <p class="step-name">Resume</p>
-                  </button>
-                  <button
-                    class="d-flex info-step"
-                    id="v-pills-ownership-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-ownership"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-ownership"
-                    aria-selected="false"
-                  >
-                    <p class="step-num">3</p>
-                    <p class="step-name">Declaration</p>
-                  </button>
-                  <button
-                    class="d-flex info-step"
-                    id="v-pills-business-profile-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-business-profile"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-business-profile"
-                    aria-selected="false"
-                  >
-                    <p class="step-num">4</p>
-                    <p class="step-name">Asset & Liabilities</p>
-                  </button>
-                  <button
-                    class="d-flex info-step"
-                    id="v-pills-business-finance-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-business-finance"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-business-finance"
-                    aria-selected="false"
-                  >
-                    <p class="step-num">5</p>
-                    <p class="step-name">Property Information</p>
-                  </button>
-                  <button
-                    class="d-flex info-step"
-                    id="v-pills-authorization-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-business"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-business"
-                    aria-selected="false"
-                  >
-                    <p class="step-num">6</p>
-                    <p class="step-name">Business Information</p>
-                  </button>
-                  <button
-                    class="d-flex info-step"
-                    id="v-pills-authorization-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-authorization"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-authorization"
-                    aria-selected="false"
-                  >
-                    <p class="step-num">7</p>
-                    <p class="step-name">Signature & Authorization</p>
-                  </button>
-                </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="search-form" action="">
+            <input class="px-3 py-2" type="search" placeholder="Search for results..." />
+            <button class="px-3 py-2">
+              <i class="fa-solid fa-magnifying-glass mt-1"></i>
+            </button>
+          </form>
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user me-2"></i>John Doe
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Settings</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a class="login-option" href="./login.html">Login</a>
+          <div class="icons">
+            <button class="ms-3" href="">
+              <i class="fa-solid fa-phone"></i>
+            </button>
+            <button class="ms-3" href="">
+              <i class="fa-solid fa-message"></i>
+            </button>
+            <button class="ms-3 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight" href="">
+              <i class="fa-solid fa-bell type=" button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Notification panel</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">...</div>
+      </div>
+
+      <div id="file-container" class="bg-body mt-4 ms-4 me-4 rounded p-3">
+        <h5>Information View</h5>
+        <hr class="" />
+        <div class="mt-2 px-3 mb-5">
+          <div class="row align-items-start">
+            <div class="col-xl-4">
+              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="active d-flex info-step" id="v-pills-personal-information-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-personal-information" type="button" role="tab"
+                  aria-controls="v-pills-personal-information" aria-selected="true">
+                  <p class="step-num">1</p>
+                  <p class="step-name">Personal Information</p>
+                </button>
+                <button class="d-flex info-step" id="v-pills-business-information-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-business-information" type="button" role="tab"
+                  aria-controls="v-pills-business-information" aria-selected="false">
+                  <p class="step-num">2</p>
+                  <p class="step-name">Resume</p>
+                </button>
+                <button class="d-flex info-step" id="v-pills-ownership-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-ownership" type="button" role="tab" aria-controls="v-pills-ownership"
+                  aria-selected="false">
+                  <p class="step-num">3</p>
+                  <p class="step-name">Declaration</p>
+                </button>
+                <button class="d-flex info-step" id="v-pills-business-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-business-profile" type="button" role="tab"
+                  aria-controls="v-pills-business-profile" aria-selected="false">
+                  <p class="step-num">4</p>
+                  <p class="step-name">Asset & Liabilities</p>
+                </button>
+                <button class="d-flex info-step" id="v-pills-business-finance-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-business-finance" type="button" role="tab"
+                  aria-controls="v-pills-business-finance" aria-selected="false">
+                  <p class="step-num">5</p>
+                  <p class="step-name">Property Information</p>
+                </button>
+                <button class="d-flex info-step" id="v-pills-authorization-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-business" type="button" role="tab" aria-controls="v-pills-business"
+                  aria-selected="false">
+                  <p class="step-num">6</p>
+                  <p class="step-name">Business Information</p>
+                </button>
+                <button class="d-flex info-step" id="v-pills-authorization-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-authorization" type="button" role="tab" aria-controls="v-pills-authorization"
+                  aria-selected="false">
+                  <p class="step-num">7</p>
+                  <p class="step-name">Signature & Authorization</p>
+                </button>
               </div>
-              <div class="col-xl-8 rounded border mt-3 mb-5">
-                <div class="tab-content" id="v-pills-tabContent">
-                  <div
-                    class="tab-pane fade show active overflow-auto"
-                    id="v-pills-personal-information"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-personal-information-tab"
-                  >
-                    <div class="p-3">
-                      <div class="info-table">
-                        <h5>Personal Information</h5>
-                        <table class="table">
-                          <thead class="border">
-                            <tr>
-                              <th class="fw-bold" scope="col">Field Name</th>
-                              <th width="50%" class="fw-bold" scope="col">Value</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>First Name*</td>
-                              <td>Nur</td>
-                            </tr>
-                            <tr>
-                              <td>Middle Initial</td>
-                              <td>Tesla</td>
-                            </tr>
-                            <tr>
-                              <td>Last Name</td>
-                              <td>Jr.</td>
-                            </tr>
-                            <tr>
-                              <td>Cell Phone</td>
-                              <td>+8801760523833</td>
-                            </tr>
-                            <tr>
-                              <td>Marital Status</td>
-                              <td>Separated</td>
-                            </tr>
-                            <tr>
-                              <td>Present Address (Street, City, State, Zip)</td>
-                              <td>Virginia</td>
-                            </tr>
-                            <tr>
-                              <td>Accommodation Type</td>
-                              <td>Own</td>
-                            </tr>
-                            <tr>
-                              <td>Rent Per Month</td>
-                              <td>30000</td>
-                            </tr>
-                            <tr>
-                              <td>Number Of Years</td>
-                              <td>12</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Are You Residing At The Present Address For Less Than Seven (7)
-                                Years?
-                              </td>
-                              <td>Yes</td>
-                            </tr>
-                            <tr>
-                              <td>Rent Per Month</td>
-                              <td>40000</td>
-                            </tr>
-                            <tr>
-                              <td>Number Of Years</td>
-                              <td>21</td>
-                            </tr>
-                            <tr>
-                              <td>Referral ID</td>
-                              <td>2122</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-
-                      <div class="mb-4">
-                        <button class="btn btn-success submit-btn">
-                          <i class="fa-solid fa-pen-to-square me-2"></i>
-                          Edit Information
-                        </button>
-                      </div>
-
-                      <div class="info-table">
-                        <h5>Create Login</h5>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="fw-bold" scope="col">Field Name</th>
-                              <th width="50%" class="fw-bold" scope="col">Value</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Email Address</td>
-                              <td>nurtesla@gmail.com</td>
-                            </tr>
-                            <tr>
-                              <td>Password</td>
-                              <td>Name</td>
-                            </tr>
-                            <tr>
-                              <td>How Did You Hear About Us?</td>
-                              <td>From Social Media</td>
-                            </tr>
-                            <tr>
-                              <td>Is There A Co-Borrower?</td>
-                              <td>No</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-
-                      <div class="mb-2">
-                        <button class="btn btn-success submit-btn">
-                          <i class="fa-solid fa-pen-to-square me-2"></i>
-                          Edit Information
-                        </button>
-                      </div>
-                    </div>
-                    <div class="p-3">
-                      <div class="info-table">
-                        <h5>Resume</h5>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="fw-bold" scope="col">Field Name</th>
-                              <th width="50%" class="fw-bold" scope="col">Value</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Name</td>
-                              <td>com</td>
-                            </tr>
-                            <tr>
-                              <td>Address</td>
-                              <td>com area</td>
-                            </tr>
-                            <tr>
-                              <td>Title/Position</td>
-                              <td>Executive</td>
-                            </tr>
-                            <tr>
-                              <td>Type Of Business</td>
-                              <td>Car Business</td>
-                            </tr>
-                            <tr>
-                              <td>Business Phone (Incl. Area Code)</td>
-                              <td>4558724547</td>
-                            </tr>
-                            <tr>
-                              <td>Years On This Job</td>
-                              <td>7</td>
-                            </tr>
-                            <tr>
-                              <td>Years In Profession</td>
-                              <td>17</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Is You Employed In Current Position For Less Than Two (2) Years,
-                                Complete The Following:
-                              </td>
-                              <td>No</td>
-                            </tr>
-                            <tr>
-                              <td colspan="2" class="text-center fw-bold">If yes !</td>
-                            </tr>
-                            <tr>
-                              <td>Name*</td>
-                              <td>Smith</td>
-                            </tr>
-                            <tr>
-                              <td>Address*</td>
-                              <td>Cape Town</td>
-                            </tr>
-                            <tr>
-                              <td>Title</td>
-                              <td>John</td>
-                            </tr>
-                            <tr>
-                              <td>Position</td>
-                              <td>Manager</td>
-                            </tr>
-                            <tr>
-                              <td>Types of Business*</td>
-                              <td>Car Business</td>
-                            </tr>
-                            <tr>
-                              <td>Business Phone (incl. area code)</td>
-                              <td>+123456789</td>
-                            </tr>
-                            <tr>
-                              <td>Dates (from)</td>
-                              <td>09/14/2022</td>
-                            </tr>
-                            <tr>
-                              <td>(to)</td>
-                              <td>09/24/2050</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="p-3">
-                      <div class="info-table">
-                        <h5>PERSONAL INCOME SOURCES</h5>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="60%" class="fw-bold" scope="col">Income Sources</th>
-                              <th class="fw-bold" scope="col">MONTHLY</th>
-                              <th class="fw-bold" scope="col">ANNUALLY</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Borrower and Co-Borrower Gross Salary</td>
-                              <td>45000</td>
-                              <td>25000</td>
-                            </tr>
-                            <tr>
-                              <td>Schedule B (Recruiting Interest and Dividends)</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Schedule C (Net Profit of Proprietorships)</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Schedule D (Recurring Capital Gains Less Losses)</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Schedule E (Recurring Rental Income Excluding Subject Property)
-                              </td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Other (List)</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td class="fw-bold">TOTAL PERSONAL INCOME</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+            </div>
+            <div class="col-xl-8 rounded border mt-3 mb-5">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active overflow-auto" id="v-pills-personal-information" role="tabpanel"
+                  aria-labelledby="v-pills-personal-information-tab">
+                  <div class="p-3">
+                    <div class="info-table">
+                      <h5>Personal Information</h5>
+                      <table class="table">
+                        <thead class="border">
+                          <tr>
+                            <th class="fw-bold" scope="col">Field Name</th>
+                            <th width="50%" class="fw-bold" scope="col">Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>First Name*</td>
+                            <td>Nur</td>
+                          </tr>
+                          <tr>
+                            <td>Middle Initial</td>
+                            <td>Tesla</td>
+                          </tr>
+                          <tr>
+                            <td>Last Name</td>
+                            <td>Jr.</td>
+                          </tr>
+                          <tr>
+                            <td>Cell Phone</td>
+                            <td>+8801760523833</td>
+                          </tr>
+                          <tr>
+                            <td>Marital Status</td>
+                            <td>Separated</td>
+                          </tr>
+                          <tr>
+                            <td>Present Address (Street, City, State, Zip)</td>
+                            <td>Virginia</td>
+                          </tr>
+                          <tr>
+                            <td>Accommodation Type</td>
+                            <td>Own</td>
+                          </tr>
+                          <tr>
+                            <td>Rent Per Month</td>
+                            <td>30000</td>
+                          </tr>
+                          <tr>
+                            <td>Number Of Years</td>
+                            <td>12</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Are You Residing At The Present Address For Less Than Seven (7)
+                              Years?
+                            </td>
+                            <td>Yes</td>
+                          </tr>
+                          <tr>
+                            <td>Rent Per Month</td>
+                            <td>40000</td>
+                          </tr>
+                          <tr>
+                            <td>Number Of Years</td>
+                            <td>21</td>
+                          </tr>
+                          <tr>
+                            <td>Referral ID</td>
+                            <td>2122</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
 
-                    <div class="p-3">
-                      <div class="info-table">
-                        <h5>PERSONAL CASH REQUIREMENTS</h5>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="60%" class="fw-bold" scope="col">CASH REQUIREMENTS</th>
-                              <th class="fw-bold" scope="col">MONTHLY</th>
-                              <th class="fw-bold" scope="col">ANNUALLY</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Residence Mortgage Payment / Rent Payment</td>
-                              <td>45000</td>
-                              <td>25000</td>
-                            </tr>
-                            <tr>
-                              <td>Federal, State & Real Estate Taxes</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Installment Loan Payments</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Credit Card Payments</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Rental Mortgage P&I Payments and Expenses (Exlude Subject Property)
-                              </td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Alimony/Child Support</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Other (List)</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td class="fw-bold">TOTAL PERSONAL INCOME</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                    <div class="mb-4">
+                      <button class="btn btn-success submit-btn">
+                        <i class="fa-solid fa-pen-to-square me-2"></i>
+                        Edit Information
+                      </button>
                     </div>
 
+                    <div class="info-table">
+                      <h5>Create Login</h5>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th class="fw-bold" scope="col">Field Name</th>
+                            <th width="50%" class="fw-bold" scope="col">Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Email Address</td>
+                            <td>nurtesla@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <td>Password</td>
+                            <td>Name</td>
+                          </tr>
+                          <tr>
+                            <td>How Did You Hear About Us?</td>
+                            <td>From Social Media</td>
+                          </tr>
+                          <tr>
+                            <td>Is There A Co-Borrower?</td>
+                            <td>No</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="mb-2">
+                      <button class="btn btn-success submit-btn">
+                        <i class="fa-solid fa-pen-to-square me-2"></i>
+                        Edit Information
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="p-3">
+                    <div class="info-table">
+                      <h6>BUSINESS INFORMATION</h6>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="50%">Name</th>
+                            <th>Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Business Name</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>DBA</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Primary Business Address</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Primary Contact Name:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Phone:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Fax:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Mo.Rent paid at this location:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Lease Expires:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Sq.Ft.?</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Mo/Mo?</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Business Tax ID #:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>E-Mail Address:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Number of Employees:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Date Business Established:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Web Site:</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="25%">Executive / Mailing Address, if other</th>
+                            <th width="25%">Sq.Ft.</th>
+                            <th width="25%">Mo. Rent</th>
+                            <th width="25%">Lease Expires</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>nur@com</td>
+                            <td>124</td>
+                            <td>11</td>
+                            <td>23/9/2022</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="25%">List Additional Business Locations</th>
+                            <th width="25%">Sq.Ft.</th>
+                            <th width="25%">Mo. Rent</th>
+                            <th width="25%">Lease Expires</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>nur@com</td>
+                            <td>124</td>
+                            <td>11</td>
+                            <td>23/9/2022</td>
+                          </tr>
+                          <tr>
+                            <td>nur@com</td>
+                            <td>124</td>
+                            <td>11</td>
+                            <td>23/9/2022</td>
+                          </tr>
+                          <tr>
+                            <td>nur@com</td>
+                            <td>124</td>
+                            <td>11</td>
+                            <td>23/9/2022</td>
+                          </tr>
+                          <tr>
+                            <td>nur@com</td>
+                            <td>124</td>
+                            <td>11</td>
+                            <td>23/9/2022</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="p-3">
+                    <div class="info-table">
+                      <h5>History</h5>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="50%">Name</th>
+                            <th>Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Nature of Business</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Types of Products / Services as percentage of total revenue</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Business revenue (Sales) trends in the last 3 years are Explain what
+                              factors have affected your trends:
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Business profitability (Net Income) trends in the last 3 years are
+                              Explain what factors have affected your trends:
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <h6>BUSINESS DECLARATIONS</h6>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="90%">Name</th>
+                            <th>Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1. Is the business a party to a lawsuit?</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              2. Has the business been involved in bankruptcy proceedings in the
+                              last 10 years?
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              3. Does the business have delinquent federal, state, payroll, sales
+                              or other tax liability?
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              4. Has the business had property foreclosed upon or given title or
+                              deed in lieu?
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              5. If renting, have you paid rent on time for each of the last 12
+                              months?
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              6. Does the business, its owners or majority stockholders have any
+                              other loans? (If “Yes”, please provide information)
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <h6>DOCUMENTS ADDITIONALLY NEEDED</h6>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <td colspan="1">
+                              In order to be considered for a commercial loan approval, the
+                              following documents are required.
+                            </td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="apply-single-input">
+                                <div class="form-check mt-2">
+                                  <input type="checkbox" required class="form-check-input" value="1" id="executed"
+                                    name="condition_first" />
+                                  <label class="form-check-label" for="executed">
+                                    Fully executed purchase contract; if applicable</label>
+                                </div>
+                                <div class="form-check mt-2">
+                                  <input type="checkbox" required class="form-check-input" value="1" id="credit"
+                                    name="condition_first" />
+                                  <label class="form-check-label" for="credit">
+                                    Tri-merge credit report.</label>
+                                </div>
+                                <div class="form-check mt-2">
+                                  <input type="checkbox" required class="form-check-input" value="1" id="worksheet"
+                                    name="condition_first" />
+                                  <label class="form-check-label" for="worksheet">
+                                    DSCR worksheet - signed and dated.</label>
+                                </div>
+                                <div class="form-check mt-2">
+                                  <input type="checkbox" required class="form-check-input" value="1" id="dated"
+                                    name="condition_first" />
+                                  <label class="form-check-label" for="dated">
+                                    Environmental Disclosure - signed and dated.</label>
+                                </div>
+                                <div class="form-check mt-2">
+                                  <input type="checkbox" required class="form-check-input" value="1" id="signed"
+                                    name="condition_first" />
+                                  <label class="form-check-label" for="signed">
+                                    Structural Disclosure - signed and dated.</label>
+                                </div>
+                                <div class="form-check mt-2">
+                                  <input type="checkbox" required class="form-check-input" value="1" id="mortgage"
+                                    name="condition_first" />
+                                  <label class="form-check-label" for="mortgage">
+                                    Rental or mortgage history. 12 months cancelled checks or bank
+                                    statements evidencing payment history.</label>
+                                </div>
+                                <div class="form-check mt-2">
+                                  <input type="checkbox" required class="form-check-input" value="1" id="license"
+                                    name="condition_first" />
+                                  <label class="form-check-label" for="license">
+                                    Evidence of being in business for 2 years and business
+                                    license.</label>
+                                </div>
+                                <div class="form-check mt-2">
+                                  <input type="checkbox" required class="form-check-input" value="1" id="property"
+                                    name="condition_first" />
+                                  <label class="form-check-label" for="property">
+                                    Photos of subject property.</label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <h6>ACKNOWLEDGEMENT AND AGREEMENT</h6>
+                      <div class="">
+                        <p class="authorization text-start">
+                          I/We authorize
+                          <input style="height: 30px" class="auth" type="text" name="authorize" />
+                          and/or assigns to make inquiries as necessary to verify the accuracy of
+                          the statements made in this application and to determine my/our
+                          creditworthiness. I/We authorize and instruct any person or consumer
+                          reporting agency to compile and furnish any information it may have or
+                          obtain in response to such credit inquiries. I/We certify the above and
+                          the statements contained in the attachments are true and accurate as of
+                          the stated date. These statements are made for the purposes of obtaining
+                          a loan. I/We understand FALSE statements may result in possible
+                          prosecution by the U.S. Attorney General (Reference 18 U.S.C. 1001).
+                          I/We authorize the release of this information whether the signature
+                          below is an original or copy.
+                        </p>
+                      </div>
+
+                      <h5>Borrower</h5>
+                      <table class="table">
+                        <thead></thead>
+                        <tbody>
+                          <tr>
+                            <td width="50%">Borrower’s Signature</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Date</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              <div class="form-check">
+                                <input type="checkbox" required class="form-check-input" value="1"
+                                  id="borrower_continue_y" name="borrower_continue" />
+                                <label class="form-check-label" for="borrower_continue_y">
+                                  I do not wish to furnish this information</label>
+                              </div>
+                              <label class="mt-3">Ethnicity:</label>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="latino_y"
+                                  name="ethnicity" />
+                                <label class="form-check-label" for="latino_y">
+                                  Hispanic or Latino</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="hispanic_y"
+                                  name="ethnicity" />
+                                <label class="form-check-label" for="hispanic_y">
+                                  Not Hispanic or Latino</label>
+                              </div>
+                              <label class="mt-3">Race:</label>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="alaska_y"
+                                  name="race" />
+                                <label class="form-check-label" for="alaska_y">
+                                  American Indian or Alaska Native</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="hawaiian_y"
+                                  name="race" />
+                                <label class="form-check-label" for="hawaiian_y">
+                                  Native Hawaiian or Other Pacific Islander</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="asian_y"
+                                  name="race" />
+                                <label class="form-check-label" for="asian_y"> Asian</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="white_y"
+                                  name="race" />
+                                <label class="form-check-label" for="white_y"> White</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="black_y"
+                                  name="race" />
+                                <label class="form-check-label" for="black_y">
+                                  Black or African American</label>
+                              </div>
+                              <label class="mt-3">Sex:</label>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="male_y"
+                                  name="sex" />
+                                <label class="form-check-label" for="male_y"> Male</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="female_y"
+                                  name="sex" />
+                                <label class="form-check-label" for="female_y"> Female</label>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <h5>Co-Borrower</h5>
+                      <table class="table">
+                        <thead></thead>
+                        <tbody>
+                          <tr>
+                            <td width="50%">Co-Borrower’s Signature</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Date</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              <div class="form-check">
+                                <input type="checkbox" required class="form-check-input" value="1"
+                                  id="co_borrower_continue_y" name="co_borrower_continue" />
+                                <label class="form-check-label" for="co_borrower_continue_y">
+                                  I do not wish to furnish this information</label>
+                              </div>
+                              <label class="mt-3">Ethnicity:</label>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="co_latino_y"
+                                  name="co_ethnicity" />
+                                <label class="form-check-label" for="co_latino_y">
+                                  Hispanic or Latino</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="co_hispanic_y"
+                                  name="co_ethnicity" />
+                                <label class="form-check-label" for="co_hispanic_y">
+                                  Not Hispanic or Latino</label>
+                              </div>
+                              <label class="mt-3">Race:</label>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="co_alaska_y"
+                                  name="co_race" />
+                                <label class="form-check-label" for="co_alaska_y">
+                                  American Indian or Alaska Native</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="co_hawaiian_y"
+                                  name="co_race" />
+                                <label class="form-check-label" for="co_hawaiian_y">
+                                  Native Hawaiian or Other Pacific Islander</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="co_asian_y"
+                                  name="co_race" />
+                                <label class="form-check-label" for="co_asian_y"> Asian</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="co_white_y"
+                                  name="co_race" />
+                                <label class="form-check-label" for="co_white_y"> White</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="co_black_y"
+                                  name="co_race" />
+                                <label class="form-check-label" for="co_black_y">
+                                  Black or African American</label>
+                              </div>
+                              <label class="mt-3">Sex:</label>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="co_male_y"
+                                  name="co_sex" />
+                                <label class="form-check-label" for="co_male_y"> Male</label>
+                              </div>
+                              <div class="custom-control custom-radio mt-1">
+                                <input type="radio" required class="form-check-input" value="1" id="co_female_y"
+                                  name="co_sex" />
+                                <label class="form-check-label" for="co_female_y"> Female</label>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <h6>To be Completed by Interviewer</h6>
+                      <table class="table">
+                        <thead></thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="2">
+                              <div class="">
+                                <label>This application was taken by:</label>
+                                <div class="form-check mt-2">
+                                  <input type="checkbox" required class="form-check-input mt-1" value="1"
+                                    id="interview_y" name="interview" />
+                                  <label class="form-check-label" for="interview_y">
+                                    Face-to-face interview</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="checkbox" required class="form-check-input mt-1" value="1" id="mail_y"
+                                    name="mail" />
+                                  <label class="form-check-label" for="mail_y"> Mail</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="checkbox" required class="form-check-input mt-1" value="1"
+                                    id="telephone_y" name="telephone" />
+                                  <label class="form-check-label" for="telephone_y">
+                                    Telephone</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="checkbox" required class="form-check-input mt-1" value="1"
+                                    id="internet_y" name="internet" />
+                                  <label class="form-check-label" for="internet_y">
+                                    Internet</label>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="50%">Interviewer’s Name (print or type)</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Interviewer’s Signature</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Date</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Interviewer’s Phone Number (incl. area code)</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Name and Address of Interviewer’s Employer</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-business-information" role="tabpanel"
+                  aria-labelledby="v-pills-business-information-tab">
+                  <div class="p-3">
+                    <div class="info-table">
+                      <h5>Resume</h5>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th class="fw-bold" scope="col">Field Name</th>
+                            <th width="50%" class="fw-bold" scope="col">Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Name</td>
+                            <td>com</td>
+                          </tr>
+                          <tr>
+                            <td>Address</td>
+                            <td>com area</td>
+                          </tr>
+                          <tr>
+                            <td>Title/Position</td>
+                            <td>Executive</td>
+                          </tr>
+                          <tr>
+                            <td>Type Of Business</td>
+                            <td>Car Business</td>
+                          </tr>
+                          <tr>
+                            <td>Business Phone (Incl. Area Code)</td>
+                            <td>4558724547</td>
+                          </tr>
+                          <tr>
+                            <td>Years On This Job</td>
+                            <td>7</td>
+                          </tr>
+                          <tr>
+                            <td>Years In Profession</td>
+                            <td>17</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Is You Employed In Current Position For Less Than Two (2) Years,
+                              Complete The Following:
+                            </td>
+                            <td>No</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="text-center fw-bold">If yes !</td>
+                          </tr>
+                          <tr>
+                            <td>Name*</td>
+                            <td>Smith</td>
+                          </tr>
+                          <tr>
+                            <td>Address*</td>
+                            <td>Cape Town</td>
+                          </tr>
+                          <tr>
+                            <td>Title</td>
+                            <td>John</td>
+                          </tr>
+                          <tr>
+                            <td>Position</td>
+                            <td>Manager</td>
+                          </tr>
+                          <tr>
+                            <td>Types of Business*</td>
+                            <td>Car Business</td>
+                          </tr>
+                          <tr>
+                            <td>Business Phone (incl. area code)</td>
+                            <td>+123456789</td>
+                          </tr>
+                          <tr>
+                            <td>Dates (from)</td>
+                            <td>09/14/2022</td>
+                          </tr>
+                          <tr>
+                            <td>(to)</td>
+                            <td>09/24/2050</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="p-3">
+                    <div class="info-table">
+                      <h5>PERSONAL INCOME SOURCES</h5>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="60%" class="fw-bold" scope="col">Income Sources</th>
+                            <th class="fw-bold" scope="col">MONTHLY</th>
+                            <th class="fw-bold" scope="col">ANNUALLY</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Borrower and Co-Borrower Gross Salary</td>
+                            <td>45000</td>
+                            <td>25000</td>
+                          </tr>
+                          <tr>
+                            <td>Schedule B (Recruiting Interest and Dividends)</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Schedule C (Net Profit of Proprietorships)</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Schedule D (Recurring Capital Gains Less Losses)</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Schedule E (Recurring Rental Income Excluding Subject Property)
+                            </td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Other (List)</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">TOTAL PERSONAL INCOME</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="p-3">
+                    <div class="info-table">
+                      <h5>PERSONAL CASH REQUIREMENTS</h5>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="60%" class="fw-bold" scope="col">CASH REQUIREMENTS</th>
+                            <th class="fw-bold" scope="col">MONTHLY</th>
+                            <th class="fw-bold" scope="col">ANNUALLY</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Residence Mortgage Payment / Rent Payment</td>
+                            <td>45000</td>
+                            <td>25000</td>
+                          </tr>
+                          <tr>
+                            <td>Federal, State & Real Estate Taxes</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Installment Loan Payments</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Credit Card Payments</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Rental Mortgage P&I Payments and Expenses (Exlude Subject Property)
+                            </td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Alimony/Child Support</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Other (List)</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td class="fw-bold">TOTAL PERSONAL INCOME</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-ownership" role="tabpanel"
+                  aria-labelledby="v-pills-ownership-tab">
+                  <h1>
                     <div class="p-3">
                       <div class="info-table">
                         <h5>DECLARATIONS</h5>
@@ -714,8 +1118,8 @@
                             </tr>
                             <tr>
                               <td>
-                                8. Are you a permanent resident alien? If yes please provide a copy
-                                of resident alien ID card.
+                                8. Are you a permanent resident alien? If yes please provide a
+                                copy of resident alien ID card.
                               </td>
                               <td>No</td>
                             </tr>
@@ -772,8 +1176,8 @@
                             </tr>
                             <tr>
                               <td>
-                                8. Are you a permanent resident alien? If yes please provide a copy
-                                of resident alien ID card.
+                                8. Are you a permanent resident alien? If yes please provide a
+                                copy of resident alien ID card.
                               </td>
                               <td>No</td>
                             </tr>
@@ -781,7 +1185,11 @@
                         </table>
                       </div>
                     </div>
-
+                  </h1>
+                </div>
+                <div class="tab-pane fade" id="v-pills-business-profile" role="tabpanel"
+                  aria-labelledby="v-pills-business-profile-tab">
+                  <h1>
                     <div class="p-3">
                       <div class="info-table">
                         <h5>ASSETS AND LIABILITIES</h5>
@@ -852,7 +1260,9 @@
                               <td>369</td>
                             </tr>
                             <tr>
-                              <td colspan="2">Stocks & Bonds (Company name/number description)</td>
+                              <td colspan="2">
+                                Stocks & Bonds (Company name/number description)
+                              </td>
                               <td>Car Hunt LLC</td>
                             </tr>
                             <tr>
@@ -1073,7 +1483,9 @@
                               </td>
                             </tr>
                             <tr>
-                              <td>Alimony/Child Support/Separate Maintenance Payments Owed to:</td>
+                              <td>
+                                Alimony/Child Support/Separate Maintenance Payments Owed to:
+                              </td>
                               <td></td>
                             </tr>
                             <tr>
@@ -1112,8 +1524,8 @@
                           <tbody>
                             <tr>
                               <td width="50%">
-                                Property Address (enter S if sold, PS if pending sale or R if rental
-                                being held for income)
+                                Property Address (enter S if sold, PS if pending sale or R if
+                                rental being held for income)
                               </td>
                               <td></td>
                               <td></td>
@@ -1165,8 +1577,9 @@
                         </table>
 
                         <h6>
-                          List any additional names under which credit has previously been received
-                          and indicate appropriate creditor name(s) and account number(s):
+                          List any additional names under which credit has previously been
+                          received and indicate appropriate creditor name(s) and account
+                          number(s):
                         </h6>
                         <table class="table">
                           <thead>
@@ -1186,1047 +1599,275 @@
                         </table>
                       </div>
                     </div>
+                  </h1>
+                </div>
 
-                    <div class="p-3">
-                      <div class="info-table">
-                        <h5>INFORMATION ABOUT PROPERTY TO BE FINANCED</h5>
-                        <h6>Loan Amount Requested</h6>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="fw-bold">Name</th>
-                              <th class="fw-bold">Value</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td width="50%">Purpose</td>
-                              <td>Refine-Cash Out</td>
-                            </tr>
-                            <tr>
-                              <td>Property Address</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>County</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Units</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Building Size</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Lot Size</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Year Built</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Construction Type (CTU, frame, block)</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Zoning</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>% Occupied Now</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Property Type (industrial, retail, office, mixed use, etc.)</td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                <div class="tab-pane fade" id="v-pills-business-finance" role="tabpanel"
+                  aria-labelledby="v-pills-business-finance-tab">
+                  <div class="p-3">
+                    <div class="info-table">
+                      <h5>INFORMATION ABOUT PROPERTY TO BE FINANCED</h5>
+                      <h6>Loan Amount Requested</h6>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th class="fw-bold">Name</th>
+                            <th class="fw-bold">Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td width="50%">Purpose</td>
+                            <td>Refine-Cash Out</td>
+                          </tr>
+                          <tr>
+                            <td>Property Address</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>County</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Units</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Building Size</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Lot Size</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Year Built</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Construction Type (CTU, frame, block)</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Zoning</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>% Occupied Now</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Property Type (industrial, retail, office, mixed use, etc.)</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
 
-                        <h6>Purchase Money Loan</h6>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th>Purchase Price</th>
-                              <th>Seller Credits</th>
-                              <th>Source of Down Payment</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td width="33%">56000</td>
-                              <td width="33%"></td>
-                              <td width="33%"></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <h6>Purchase Money Loan</h6>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Purchase Price</th>
+                            <th>Seller Credits</th>
+                            <th>Source of Down Payment</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td width="33%">56000</td>
+                            <td width="33%"></td>
+                            <td width="33%"></td>
+                          </tr>
+                        </tbody>
+                      </table>
 
-                        <h6>Refinance Loan</h6>
-                        <table class="table">
-                          <thead></thead>
-                          <tbody>
-                            <tr>
-                              <td width="50%">
-                                Have all payments been made on time for the last 12 months? (If no,
-                                please explain on a separate page)
-                              </td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Is there a prepayment penalty?</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Year Acquired</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Original Cost</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Year Improved</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Improvement Cost</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Present Value</td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="25%">Existing Liens - Lender</th>
-                              <th width="25%">Date Made</th>
-                              <th width="25%">Original Amount</th>
-                              <th width="25%">Current Balance</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Bank</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Bank</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Bank</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="33%">Term</th>
-                              <th width="33%">Rate</th>
-                              <th width="33%">SBA?</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>45</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>45</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>45</td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <h6>Refinance Loan</h6>
+                      <table class="table">
+                        <thead></thead>
+                        <tbody>
+                          <tr>
+                            <td width="50%">
+                              Have all payments been made on time for the last 12 months? (If no,
+                              please explain on a separate page)
+                            </td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Is there a prepayment penalty?</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Year Acquired</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Original Cost</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Year Improved</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Improvement Cost</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Present Value</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="25%">Existing Liens - Lender</th>
+                            <th width="25%">Date Made</th>
+                            <th width="25%">Original Amount</th>
+                            <th width="25%">Current Balance</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Bank</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Bank</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Bank</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="33%">Term</th>
+                            <th width="33%">Rate</th>
+                            <th width="33%">SBA?</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>45</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>45</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>45</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
 
-                        <h6>Cash Out Request</h6>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="50%">Name</th>
-                              <th>Value</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Amount Requested</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Cash out use:</td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <h6>Cash Out Request</h6>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="50%">Name</th>
+                            <th>Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Amount Requested</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Cash out use:</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
 
-                        <h6>VESTING OF REAL ESTATE TITLE</h6>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="50%">Name</th>
-                              <th>Value</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Type of Entity (select one)</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Business Type (select one)</td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <h6>VESTING OF REAL ESTATE TITLE</h6>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="50%">Name</th>
+                            <th>Value</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Type of Entity (select one)</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Business Type (select one)</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
 
-                        <h6>OWNERSHIP/OFFICERS/DIRECTORS</h6>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="33%">Name</th>
-                              <th width="33%">Title</th>
-                              <th width="33%">%owned</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Joe Martin</td>
-                              <td>Executive Member</td>
-                              <td>20%</td>
-                            </tr>
-                            <tr>
-                              <td>Joe Martin</td>
-                              <td>Executive Member</td>
-                              <td>20%</td>
-                            </tr>
-                            <tr>
-                              <td>Joe Martin</td>
-                              <td>Executive Member</td>
-                              <td>20%</td>
-                            </tr>
-                            <tr>
-                              <td>Joe Martin</td>
-                              <td>Executive Member</td>
-                              <td>20%</td>
-                            </tr>
-                            <tr>
-                              <td>Joe Martin</td>
-                              <td>Executive Member</td>
-                              <td>20%</td>
-                            </tr>
-                            <tr>
-                              <td>Joe Martin</td>
-                              <td>Executive Member</td>
-                              <td>20%</td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <h6>BUSINESS INFORMATION</h6>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="50%">Name</th>
-                              <th>Value</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Business Name</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>DBA</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Primary Business Address</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Primary Contact Name:</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Phone:</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Fax:</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Mo.Rent paid at this location:</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Lease Expires:</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Sq.Ft.?</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Mo/Mo?</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Business Tax ID #:</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>E-Mail Address:</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Number of Employees:</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Date Business Established:</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Web Site:</td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="25%">Executive / Mailing Address, if other</th>
-                              <th width="25%">Sq.Ft.</th>
-                              <th width="25%">Mo. Rent</th>
-                              <th width="25%">Lease Expires</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>nur@com</td>
-                              <td>124</td>
-                              <td>11</td>
-                              <td>23/9/2022</td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="25%">List Additional Business Locations</th>
-                              <th width="25%">Sq.Ft.</th>
-                              <th width="25%">Mo. Rent</th>
-                              <th width="25%">Lease Expires</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>nur@com</td>
-                              <td>124</td>
-                              <td>11</td>
-                              <td>23/9/2022</td>
-                            </tr>
-                            <tr>
-                              <td>nur@com</td>
-                              <td>124</td>
-                              <td>11</td>
-                              <td>23/9/2022</td>
-                            </tr>
-                            <tr>
-                              <td>nur@com</td>
-                              <td>124</td>
-                              <td>11</td>
-                              <td>23/9/2022</td>
-                            </tr>
-                            <tr>
-                              <td>nur@com</td>
-                              <td>124</td>
-                              <td>11</td>
-                              <td>23/9/2022</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-
-                    <div class="p-3">
-                      <div class="info-table">
-                        <h5>History</h5>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="50%">Name</th>
-                              <th>Value</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Nature of Business</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Types of Products / Services as percentage of total revenue</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Business revenue (Sales) trends in the last 3 years are Explain what
-                                factors have affected your trends:
-                              </td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Business profitability (Net Income) trends in the last 3 years are
-                                Explain what factors have affected your trends:
-                              </td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <h6>BUSINESS DECLARATIONS</h6>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th width="90%">Name</th>
-                              <th>Value</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1. Is the business a party to a lawsuit?</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                2. Has the business been involved in bankruptcy proceedings in the
-                                last 10 years?
-                              </td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                3. Does the business have delinquent federal, state, payroll, sales
-                                or other tax liability?
-                              </td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                4. Has the business had property foreclosed upon or given title or
-                                deed in lieu?
-                              </td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                5. If renting, have you paid rent on time for each of the last 12
-                                months?
-                              </td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>
-                                6. Does the business, its owners or majority stockholders have any
-                                other loans? (If “Yes”, please provide information)
-                              </td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <h6>DOCUMENTS ADDITIONALLY NEEDED</h6>
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <td colspan="1">
-                                In order to be considered for a commercial loan approval, the
-                                following documents are required.
-                              </td>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div class="apply-single-input">
-                                  <div class="form-check mt-2">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input"
-                                      value="1"
-                                      id="executed"
-                                      name="condition_first"
-                                    />
-                                    <label class="form-check-label" for="executed">
-                                      Fully executed purchase contract; if applicable</label
-                                    >
-                                  </div>
-                                  <div class="form-check mt-2">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input"
-                                      value="1"
-                                      id="credit"
-                                      name="condition_first"
-                                    />
-                                    <label class="form-check-label" for="credit">
-                                      Tri-merge credit report.</label
-                                    >
-                                  </div>
-                                  <div class="form-check mt-2">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input"
-                                      value="1"
-                                      id="worksheet"
-                                      name="condition_first"
-                                    />
-                                    <label class="form-check-label" for="worksheet">
-                                      DSCR worksheet - signed and dated.</label
-                                    >
-                                  </div>
-                                  <div class="form-check mt-2">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input"
-                                      value="1"
-                                      id="dated"
-                                      name="condition_first"
-                                    />
-                                    <label class="form-check-label" for="dated">
-                                      Environmental Disclosure - signed and dated.</label
-                                    >
-                                  </div>
-                                  <div class="form-check mt-2">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input"
-                                      value="1"
-                                      id="signed"
-                                      name="condition_first"
-                                    />
-                                    <label class="form-check-label" for="signed">
-                                      Structural Disclosure - signed and dated.</label
-                                    >
-                                  </div>
-                                  <div class="form-check mt-2">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input"
-                                      value="1"
-                                      id="mortgage"
-                                      name="condition_first"
-                                    />
-                                    <label class="form-check-label" for="mortgage">
-                                      Rental or mortgage history. 12 months cancelled checks or bank
-                                      statements evidencing payment history.</label
-                                    >
-                                  </div>
-                                  <div class="form-check mt-2">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input"
-                                      value="1"
-                                      id="license"
-                                      name="condition_first"
-                                    />
-                                    <label class="form-check-label" for="license">
-                                      Evidence of being in business for 2 years and business
-                                      license.</label
-                                    >
-                                  </div>
-                                  <div class="form-check mt-2">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input"
-                                      value="1"
-                                      id="property"
-                                      name="condition_first"
-                                    />
-                                    <label class="form-check-label" for="property">
-                                      Photos of subject property.</label
-                                    >
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <h6>ACKNOWLEDGEMENT AND AGREEMENT</h6>
-                        <div class="">
-                          <p class="authorization text-start">
-                            I/We authorize
-                            <input style="height: 30px" class="auth" type="text" name="authorize" />
-                            and/or assigns to make inquiries as necessary to verify the accuracy of
-                            the statements made in this application and to determine my/our
-                            creditworthiness. I/We authorize and instruct any person or consumer
-                            reporting agency to compile and furnish any information it may have or
-                            obtain in response to such credit inquiries. I/We certify the above and
-                            the statements contained in the attachments are true and accurate as of
-                            the stated date. These statements are made for the purposes of obtaining
-                            a loan. I/We understand FALSE statements may result in possible
-                            prosecution by the U.S. Attorney General (Reference 18 U.S.C. 1001).
-                            I/We authorize the release of this information whether the signature
-                            below is an original or copy.
-                          </p>
-                        </div>
-
-                        <h5>Borrower</h5>
-                        <table class="table">
-                          <thead></thead>
-                          <tbody>
-                            <tr>
-                              <td width="50%">Borrower’s Signature</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Date</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td colspan="2">
-                                <div class="form-check">
-                                  <input
-                                    type="checkbox"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="borrower_continue_y"
-                                    name="borrower_continue"
-                                  />
-                                  <label class="form-check-label" for="borrower_continue_y">
-                                    I do not wish to furnish this information</label
-                                  >
-                                </div>
-                                <label class="mt-3">Ethnicity:</label>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="latino_y"
-                                    name="ethnicity"
-                                  />
-                                  <label class="form-check-label" for="latino_y">
-                                    Hispanic or Latino</label
-                                  >
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="hispanic_y"
-                                    name="ethnicity"
-                                  />
-                                  <label class="form-check-label" for="hispanic_y">
-                                    Not Hispanic or Latino</label
-                                  >
-                                </div>
-                                <label class="mt-3">Race:</label>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="alaska_y"
-                                    name="race"
-                                  />
-                                  <label class="form-check-label" for="alaska_y">
-                                    American Indian or Alaska Native</label
-                                  >
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="hawaiian_y"
-                                    name="race"
-                                  />
-                                  <label class="form-check-label" for="hawaiian_y">
-                                    Native Hawaiian or Other Pacific Islander</label
-                                  >
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="asian_y"
-                                    name="race"
-                                  />
-                                  <label class="form-check-label" for="asian_y"> Asian</label>
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="white_y"
-                                    name="race"
-                                  />
-                                  <label class="form-check-label" for="white_y"> White</label>
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="black_y"
-                                    name="race"
-                                  />
-                                  <label class="form-check-label" for="black_y">
-                                    Black or African American</label
-                                  >
-                                </div>
-                                <label class="mt-3">Sex:</label>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="male_y"
-                                    name="sex"
-                                  />
-                                  <label class="form-check-label" for="male_y"> Male</label>
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="female_y"
-                                    name="sex"
-                                  />
-                                  <label class="form-check-label" for="female_y"> Female</label>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <h5>Co-Borrower</h5>
-                        <table class="table">
-                          <thead></thead>
-                          <tbody>
-                            <tr>
-                              <td width="50%">Co-Borrower’s Signature</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Date</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td colspan="2">
-                                <div class="form-check">
-                                  <input
-                                    type="checkbox"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="co_borrower_continue_y"
-                                    name="co_borrower_continue"
-                                  />
-                                  <label class="form-check-label" for="co_borrower_continue_y">
-                                    I do not wish to furnish this information</label
-                                  >
-                                </div>
-                                <label class="mt-3">Ethnicity:</label>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="co_latino_y"
-                                    name="co_ethnicity"
-                                  />
-                                  <label class="form-check-label" for="co_latino_y">
-                                    Hispanic or Latino</label
-                                  >
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="co_hispanic_y"
-                                    name="co_ethnicity"
-                                  />
-                                  <label class="form-check-label" for="co_hispanic_y">
-                                    Not Hispanic or Latino</label
-                                  >
-                                </div>
-                                <label class="mt-3">Race:</label>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="co_alaska_y"
-                                    name="co_race"
-                                  />
-                                  <label class="form-check-label" for="co_alaska_y">
-                                    American Indian or Alaska Native</label
-                                  >
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="co_hawaiian_y"
-                                    name="co_race"
-                                  />
-                                  <label class="form-check-label" for="co_hawaiian_y">
-                                    Native Hawaiian or Other Pacific Islander</label
-                                  >
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="co_asian_y"
-                                    name="co_race"
-                                  />
-                                  <label class="form-check-label" for="co_asian_y"> Asian</label>
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="co_white_y"
-                                    name="co_race"
-                                  />
-                                  <label class="form-check-label" for="co_white_y"> White</label>
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="co_black_y"
-                                    name="co_race"
-                                  />
-                                  <label class="form-check-label" for="co_black_y">
-                                    Black or African American</label
-                                  >
-                                </div>
-                                <label class="mt-3">Sex:</label>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="co_male_y"
-                                    name="co_sex"
-                                  />
-                                  <label class="form-check-label" for="co_male_y"> Male</label>
-                                </div>
-                                <div class="custom-control custom-radio mt-1">
-                                  <input
-                                    type="radio"
-                                    required
-                                    class="form-check-input"
-                                    value="1"
-                                    id="co_female_y"
-                                    name="co_sex"
-                                  />
-                                  <label class="form-check-label" for="co_female_y"> Female</label>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <h6>To be Completed by Interviewer</h6>
-                        <table class="table">
-                          <thead></thead>
-                          <tbody>
-                            <tr>
-                              <td colspan="2">
-                                <div class="">
-                                  <label>This application was taken by:</label>
-                                  <div class="form-check mt-2">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input mt-1"
-                                      value="1"
-                                      id="interview_y"
-                                      name="interview"
-                                    />
-                                    <label class="form-check-label" for="interview_y">
-                                      Face-to-face interview</label
-                                    >
-                                  </div>
-                                  <div class="form-check">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input mt-1"
-                                      value="1"
-                                      id="mail_y"
-                                      name="mail"
-                                    />
-                                    <label class="form-check-label" for="mail_y"> Mail</label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input mt-1"
-                                      value="1"
-                                      id="telephone_y"
-                                      name="telephone"
-                                    />
-                                    <label class="form-check-label" for="telephone_y">
-                                      Telephone</label
-                                    >
-                                  </div>
-                                  <div class="form-check">
-                                    <input
-                                      type="checkbox"
-                                      required
-                                      class="form-check-input mt-1"
-                                      value="1"
-                                      id="internet_y"
-                                      name="internet"
-                                    />
-                                    <label class="form-check-label" for="internet_y">
-                                      Internet</label
-                                    >
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td width="50%">Interviewer’s Name (print or type)</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Interviewer’s Signature</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Date</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Interviewer’s Phone Number (incl. area code)</td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td>Name and Address of Interviewer’s Employer</td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                      <h6>OWNERSHIP/OFFICERS/DIRECTORS</h6>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th width="33%">Name</th>
+                            <th width="33%">Title</th>
+                            <th width="33%">%owned</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Joe Martin</td>
+                            <td>Executive Member</td>
+                            <td>20%</td>
+                          </tr>
+                          <tr>
+                            <td>Joe Martin</td>
+                            <td>Executive Member</td>
+                            <td>20%</td>
+                          </tr>
+                          <tr>
+                            <td>Joe Martin</td>
+                            <td>Executive Member</td>
+                            <td>20%</td>
+                          </tr>
+                          <tr>
+                            <td>Joe Martin</td>
+                            <td>Executive Member</td>
+                            <td>20%</td>
+                          </tr>
+                          <tr>
+                            <td>Joe Martin</td>
+                            <td>Executive Member</td>
+                            <td>20%</td>
+                          </tr>
+                          <tr>
+                            <td>Joe Martin</td>
+                            <td>Executive Member</td>
+                            <td>20%</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-business-information"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-business-information-tab"
-                  >
-                    <h1>Part 2</h1>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-ownership"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-ownership-tab"
-                  >
-                    <h1>Part 3</h1>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-business-profile"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-business-profile-tab"
-                  >
-                    <h1>Part 4</h1>
-                  </div>
+                </div>
 
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-business-finance"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-business-finance-tab"
-                  >
-                    <h1>Part 5</h1>
-                  </div>
+                <div class="tab-pane fade" id="v-pills-business" role="tabpanel" aria-labelledby="v-pills-business-tab">
+                  <h1>Part 6</h1>
+                </div>
 
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-business"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-business-tab"
-                  >
-                    <h1>Part 6</h1>
-                  </div>
-
-                  <div
-                    class="tab-pane fade"
-                    id="v-pills-authorization"
-                    role="tabpanel"
-                    aria-labelledby="v-pills-authorization-tab"
-                  >
-                    <h1>Part 7</h1>
-                  </div>
+                <div class="tab-pane fade" id="v-pills-authorization" role="tabpanel"
+                  aria-labelledby="v-pills-authorization-tab">
+                  <h1>Part 7</h1>
                 </div>
               </div>
             </div>
@@ -2234,15 +1875,17 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      var el = document.getElementById("wrapper");
-      var toggleButton = document.getElementById("menu-toggle");
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var el = document.getElementById("wrapper");
+    var toggleButton = document.getElementById("menu-toggle");
 
-      toggleButton.onclick = function () {
-        el.classList.toggle("toggled");
-      };
-    </script>
-  </body>
+    toggleButton.onclick = function () {
+      el.classList.toggle("toggled");
+    };
+  </script>
+</body>
+
 </html>
