@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9c393abfb6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link class="icon" rel="icon" type="image/x-icon" href="/Images/Icon/logo.ico">
+    <title>Commercial Loan</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 text-light primary-text fs-5 fw-bold text-uppercase">
+                Commercial Loan
+            </div>
+            <div class="card">
+                <img class="mx-auto" src="./Images/profile-pic.png" alt="" />
+                <h5>Elina Jahan Eli</h5>
+                <p>Customer Admin</p>
+            </div>
+
+            <hr class="side-hr" />
+            <div class="list-group list-group-flush my-3">
+                <a href="index.html" class="side-option">
+                    <img class="me-2" src="./Images/SVG/dash.svg" alt="" />Dashboard</a>
+            </div>
+            <hr class="side-hr" />
+            <div class="list-group list-group-flush my-3">
+                <a href="/documents.html" class="side-option">
+                    <img class="me-2 doc" src="./Images/SVG/black-doc.svg" alt="" />Documents</a>
+            </div>
+            <hr class="side-hr" />
+            <div class="list-group list-group-flush my-3">
+                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                    aria-controls="collapseExample" href="#" class="side-option d-flex actv">
+                    <div><img class="me-2 doc" src="./Images/SVG/color-hand.svg" alt=""></div>
+                    <div>Business Loan Application</div>
+                    <div class="drop-icon"><i class="fa-solid fa-caret-down"></i></div>
+                </a>
+                <div class="collapse show px-3" id="collapseExample">
+                    <div class="business-loan-options">
+                        <a class="mt-1" href="/application-edit.html"><i class="fa-solid fa-pen-to-square"></i>
+                            Application Edit <i class="fa-solid fa-circle ms-1"></i></a>
+                        <hr class="mt-2 mb-1">
+                        <a href="/application-view.html"><i class="fa-solid fa-file-contract me-1"></i> Application
+                            View</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="side-hr" />
+            <div class="list-group list-group-flush my-3">
+                <a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                    aria-controls="collapseExample" href="#" class="side-option d-flex">
+                    <div><img class="me-2 doc" src="./Images/SVG/residentian-investment.svg" alt=""></div>
+                    <div>Residential Loan Application</div>
+                    <div class="drop-icon"><i class="fa-solid fa-caret-down"></i></div>
+                </a>
+                <div class="collapse px-3" id="collapseExample2">
+                    <div class="business-loan-options">
+                        <a class="mt-1" href="/residencial-application-edit.html"><i class="fa-solid fa-pen-to-square"></i>
+                            Application Edit</a>
+                        <hr class="mt-2 mb-1">
+                        <a href="/residencial-appication-view.html"><i class="fa-solid fa-file-contract me-1"></i> Application
+                            View</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="side-hr" />
+            <div class="list-group list-group-flush my-3">
+                <a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+                    aria-controls="collapseExample" class="side-option d-flex">
+                    <div><img class="me-2 doc" src="./Images/SVG/commercial-loan-application.svg" alt=""></div>
+                    <div>Commercial Loan Application</div>
+                    <div class="drop-icon"><i class="fa-solid fa-caret-down"></i></div>
+                </a>
+                <div class="collapse px-3" id="collapseExample3">
+                    <div class="business-loan-options">
+                        <a class="mt-1" href="./commercial-application-edit.html"><i
+                                class="fa-solid fa-pen-to-square"></i>
+                            Application Edit</a>
+                        <hr class="mt-2 mb-1">
+                        <a href="./commercial-application-view.html"><i class="fa-solid fa-file-contract me-1"></i>
+                            Application
+                            View</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="side-hr" />
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="search-form" action="">
+                        <input class="px-3 py-2" type="search" placeholder="Search for results..." />
+                        <button class="px-3 py-2">
+                            <i class="fa-solid fa-magnifying-glass mt-1"></i>
+                        </button>
+                    </form>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user me-2"></i>John Doe
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="login-option" href="./login.html">Login</a>
+                    <div class="icons">
+                        <button class="ms-3" href="">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        <button class="ms-3" href="">
+                            <i class="fa-solid fa-message"></i>
+                        </button>
+                        <button class="ms-3 me-3" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="">
+                            <i class="fa-solid fa-bell type=" button data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Notification panel</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">...</div>
+            </div>
+
+            <div id="file-container" class="bg-body mt-4 mb-5 ms-4 me-4 rounded p-3">
+                <h5>Business Loan Application Edit</h5>
+                <hr class="ms-0 me-0" />
+
+                <div class="apply-form-header">
+                    <div class="apply-form-step">
+                        <div class="step step-active">
+                            <p class="nom mx-auto">1</p><span>Start</span>
+                        </div>
+                        <div class="step">
+                            <p class="nom mx-auto">2</p><span>Business Information</span>
+                        </div>
+                        <div class="step">
+                            <p class="nom mx-auto">3</p><span>Ownership</span>
+                        </div>
+                        <div class="step">
+                            <p class="nom mx-auto">4</p><span>Lease & Business Profile</span>
+                        </div>
+                        <div class="step">
+                            <p class="nom mx-auto">5</p></i> <span>Others</span>
+                        </div>
+                        <div class="step">
+                            <p class="nom mx-auto">6</p><span>Signature & Authorization</span>
+                        </div>
+                        <div class="step">
+                            <p class="nom mx-auto">7</p><span>Upload</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                        style="width: 7%;height: 5px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <div class="row mt-5 px-3">
+                    <div class="col-md-6 mt-4">
+                        <h5>Personal Information</h5>
+
+                        <form action="" class="mt-5 mb-5 input-group-field">
+                            <label for="name" class="form-label mb-1">First Name*</label>
+                            <input type="text" id="inputName" name="applicant_first_name" class="form-control shadow-sm"
+                                placeholder="Nur">
+                            <label for="name" class="form-label mb-1 mt-4">Middle Initial</label>
+                            <input type="text" id="inputName" name="applicant_middle_name"
+                                class="form-control shadow-sm" placeholder="Your Name">
+                            <label for="name" class="form-label mb-1 mt-4">Last Name*</label>
+                            <input type="text" id="inputName" name="applicant_last_name" class="form-control shadow-sm"
+                                placeholder="Name">
+                            <label for="name" name="applicable" name="applicable" class="form-label mt-4">(Include Jr.
+                                Or Sr If Applicable)</label>
+                            <input type="text" id="inputName" class="form-control shadow-sm" placeholder="Jr.">
+                            <label for="name" class="form-label mt-4">Cell / Evening Phone*</label>
+                            <input type="number" id="inputName" name="cell_phone" class="form-control shadow-sm"
+                                placeholder="+8801760523833">
+                        </form>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <h5>Create Login</h5>
+                        <form action="" class="mt-5 mb-5 input-group-field">
+                            <label for="email" class="form-label mb-1">Email Address*</label>
+                            <input type="email" class="form-control shadow-sm" placeholder="nurtesla@gmail.com">
+                            <label for="re-email" class="form-label mb-1 mt-4">Re-Enter Email Address*</label>
+                            <input type="email" class="form-control shadow-sm" placeholder="nurtesla@gmail.com">
+                            <label for="password" class="form-label mb-1 mt-4">Create A Password*</label>
+                            <input type="text" class="form-control shadow-sm" placeholder="*********">
+                            <label class="form-label mb-1 mt-4">How Did You Hear About Us?*</label>
+                            <input type="text" class="form-control shadow-sm" placeholder="From Online">
+                            <label for="name" class="form-label mb-1 mt-4">Is There A Co-Borrower?</label> <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">No</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="px-3 mb-4">
+                    <button class="btn btn-success submit-btn">Submit <i
+                            class="fa-solid fa-arrow-right ms-1"></i></button>
+                </div>
+
+                <!-- Authorization start -->
+                <div class="auth px-3">
+                    <h3 class="mb-4">Authorization Agreements</h3>
+
+                    <h5>CREDIT REPORT AUTHORIZATION FORM</h5>
+                    <p class="text-start">Authorization is hereby granted to Commercial Lending USA, to obtain a
+                        consumer credit report
+                        through a credit reporting agency chosen by Commercial Lending USA. I understand and agree that
+                        Commercial Lending USA intends to use the consumer credit report for the purposes of evaluating
+                        my financial readiness to obtain a loan.
+                        <br>
+                        <br>
+                        I understand that this credit report will be retained on file at the Commercial Lending USA
+                        company office for use only by Commercial Lending USA company staff. This information will not
+                        be disclosed to anyone by Commercial Lending USA without my written consent.
+                        <br>
+                        <br>
+                        Furthermore, I understand that, should I choose to apply for financing through Commercial
+                        Lending USA, a revised credit report costing an additional fee may be required. My signature
+                        below authorizes the release to the credit reporting agency of financial information which I
+                        have supplied to Commercial Lending USA in connection with such an evaluation. Authorization is
+                        further granted to the credit reporting agency to use the photostatic reproduction of this form
+                        if required to obtain any information necessary to complete my consumer credit report
+                    </p>
+                    <p class="text-start"><b>CHECKING THE BOX BELOW GRANTS PERMISSION FOR THE RELEASE OF FINANCIAL
+                            INFORMATION TO THE CREDIT REPORTING AGENCY AND GRANTS PERMISSION FOR Commercial Lending USA
+                            TO OBTAIN A COPY OF YOUR CREDIT REPORT.</b></p>
+
+                    <div class="mb-3 mt-0 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I agree</label>
+                    </div>
+
+                    <h5 class="mt-5">AGREEMENT TO RECEIVE ELECTRONIC DOCUMENTS</h5>
+                    <p class="text-start">By checking the “I Accept” box, you are providing consent for (”Commercial
+                        Lending USA”, “We”,
+                        Us”) to provide required disclosures to you electronically & contact through call, text or
+                        email.
+                        <br>
+                        <br>
+                        You understand this agreement applies to all statements and disclosures related to my accounts
+                        at Commercial Lending USA. All disclosures normally required to be made by law, in connection
+                        with any service you may have or which you may obtain in the future from Commercial Lending USA
+                        and that Commercial Lending USA may, from time to time, notify you electronically of the
+                        availability of such disclosures and statements in electronic form.
+                        <br>
+                        <br>
+                        You understand that by agreeing to receive documents electronically & contact through call, text
+                        or email; you will not be receiving said statements and disclosures in paper form. Accordingly,
+                        you should print or otherwise retain a copy of electronic documents for your records
+                    </p>
+                    <div class="mb-3 mt-0 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I agree</label>
+                    </div>
+
+                    <h5 class="mt-5">USA PATRIOT ACT INFORMATION DISCLOSURE</h5>
+                    <p class="text-start">Important Information about Application Procedures
+                        <br>
+                        <br>
+                        To help the government fight the funding of terrorism and money laundering activities, Federal
+                        law requires all financial institutions to obtain, verify, and record information that
+                        identifies every customer.
+                        <br>
+                        <br>
+                        What this means to you: When you apply for a loan, we will ask for your name, address, date of
+                        birth, and other information that will allow us to identify you. We may also ask to see your
+                        driver’s license or other identifying documents
+                    </p>
+                    <p class="text-start"><b>BY CHECKING THE BOX BELOW I/WE ACKNOWLEDGE THAT I/WE RECEIVED A COPY OF
+                            THIS DISCLOSURE</b></p>
+                    <div class="mb-3 mt-0 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I agree</label>
+                    </div>
+
+                    <div class="mt-3">
+                        <button class="btn btn-success submit-btn">Continue <i
+                                class="fa-solid fa-arrow-right ms-1"></i></button>
+                    </div>
+                </div>
+                <!-- Authorization end -->
+
+                <!-- step-2 start -->
+                <div class="px-3 auth">
+                    <div class="apply-form-header mt-5">
+                        <div class="apply-form-step">
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Start</span>
+                            </div>
+                            <div class="step step-active">
+                                <p class="nom mx-auto">2</p><span>Business Information</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">3</p><span>Ownership</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">4</p><span>Lease & Business Profile</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">5</p></i> <span>Others</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">6</p><span>Signature & Authorization</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">7</p><span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                            style="width: 21.5%;height: 5px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <div class="mt-5 step-form">
+                        <h5 class="mb-3">Business Information</h5>
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label mb-1">Legal Business Name</label>
+                                    <input type="text" name="s2_legal_business_name" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="dba_name" class="form-label mb-1">DBA Name</label>
+                                    <input type="text" name="s2_dba_name" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="mb-3">
+                                    <label for="address" class="form-label mb-1">Physical Address</label>
+                                    <input type="text" name="s2_physical_address" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="mb-3">
+                                    <label for="city" class="form-label mb-1">City</label>
+                                    <input type="text" name="s2_physical_city" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="mb-3">
+                                    <label for="state" class="form-label mb-1">State</label>
+                                    <input type="text" name="s2_physical_state" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="mb-3">
+                                    <label for="zip" class="form-label mb-1">Zip</label>
+                                    <input type="number" name="s2_physical_zip" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="mb-3">
+                                    <label for="address" class="form-label mb-1">Mailing Address</label>
+                                    <input type="text" name="s2_mailing_address" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="mb-3">
+                                    <label for="city" class="form-label mb-1">City</label>
+                                    <input type="text" name="s2_mailing_city" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="mb-3">
+                                    <label for="state" class="form-label mb-1">State</label>
+                                    <input type="text" name="s2_mailing_state" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="mb-3">
+                                    <label for="zip" class="form-label mb-1">Zip</label>
+                                    <input type="number" name="s2_mailing_zip" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Federal Tax ID (9 Digit)</label>
+                                    <input type="number" name="s2_federal_taxid" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Business Phone</label>
+                                    <input type="number" name="s2_business_phone" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Business Fax</label>
+                                    <input type="text" name="s2_business_fax" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Contact</label>
+                                    <input type="text" name="s2_contact_business" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Email</label>
+                                    <input type="text" name="s2_email_business" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Website</label>
+                                    <input type="text" name="s2_website_business" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Date business started</label>
+                                    <input type="text" name="s2_date_business_started" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Length of ownership</label>
+                                    <input type="text" name="s2_length_of_ownership" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Years at location</label>
+                                    <input type="text" name="s2_years_at_location" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1"># of locations</label>
+                                    <input type="text" name="s2_of_location" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <button class="btn btn-success submit-btn">Continue <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- step-2 end -->
+
+                <!-- step-3 start -->
+                <div class="px-3 auth">
+                    <div class="apply-form-header mt-5">
+                        <div class="apply-form-step">
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Start</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Business
+                                    Information</span>
+                            </div>
+                            <div class="step step-active">
+                                <p class="nom mx-auto">3</p><span>Ownership</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">4</p><span>Lease & Business Profile</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">5</p></i> <span>Others</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">6</p><span>Signature & Authorization</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">7</p><span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                            style="width: 36%;height: 5px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <div class="mt-5 step-form">
+                        <h5 class="mb-3">Ownership</h5>
+
+                        <div class="row mb-5">
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Owner name</label>
+                                    <input type="text" name="s3_owner_name" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Home phone</label>
+                                    <input type="number" name="s3_owner_home_phone" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Cell phone</label>
+                                    <input type="number" name="s3_owner_cell_phone" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Home Address</label>
+                                    <input type="text" name="s3_owner_home_address" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">City</label>
+                                    <input type="text" name="s3_owner_city" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">State</label>
+                                    <input type="text" name="s3_owner_state" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Zip</label>
+                                    <input type="number" name="s3_owner_zip" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Driver’s license or Permanent Resident Card</label>
+                                    <input type="text" name="s3_owner_driver_license" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">SSN</label>
+                                    <input type="text" name="s3_owner_ssn" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Date of birth</label>
+                                    <input type="date" name="s3_owner_date_of_birth" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">% ownership of company</label>
+                                    <input type="text" name="s3_owner_ownership_company" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mt-5">
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Co-Owner name</label>
+                                    <input type="text" name="s3_co_owner_name" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Home phone</label>
+                                    <input type="number" name="s3_co_owner_home_phone" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Cell phone</label>
+                                    <input type="number" name="s3_co_owner_cell_phone" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Home Address</label>
+                                    <input type="text" name="s3_co_owner_home_address" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">City</label>
+                                    <input type="text" name="s3_co_owner_city" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">State</label>
+                                    <input type="text" name="s3_co_owner_state" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Zip</label>
+                                    <input type="number" name="s3_co_owner_zip" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Driver’s license or Permanent Resident Card</label>
+                                    <input type="text" name="s3_co_owner_driver_license" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">SSN</label>
+                                    <input type="text" name="s3_co_owner_ssn" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Date of birth</label>
+                                    <input type="date" name="s3_co_owner_date_of_birth" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-3">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">% ownership of company</label>
+                                    <input type="text" name="s3_co_owner_ownership_company"
+                                        class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <button class="btn btn-success submit-btn">Continue <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- step-3 end -->
+
+                <!-- step-4 start -->
+                <div class="px-3 auth">
+                    <div class="apply-form-header mt-5">
+                        <div class="apply-form-step">
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Start</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Business
+                                    Information</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Ownership</span>
+                            </div>
+                            <div class="step step-active">
+                                <p class="nom mx-auto">4</p><span>Lease & Business Profile</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">5</p></i> <span>Others</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">6</p><span>Signature & Authorization</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">7</p><span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                            style="width: 50%;height: 5px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+
+                    <div class="mt-5 step-form">
+                        <h5 class="mb-3">Lease</h5>
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Landlord name/contact<span>*</span></label>
+                                    <input type="text" name="s4_lease_landlord_name" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Work phone<span>*</span></label>
+                                    <input type="number" name="s4_lease_work_phone" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Cell phone</label>
+                                    <input type="number" name="s4_lease_cell_phone" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Monthly rent</label>
+                                    <input type="number" name="s4_lease_monthly_rent" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="mb-3 mt-5">Business Profile</h5>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <h6 class="mb-3">Ownership<span>*</span></h6>
+                                    <div class="custom-control radio d-inline">
+                                        <input required type="radio" class="form-check-input" id="bp-owner-1"
+                                            name="s4_business_ownership" value="Proprietorship">
+                                        <label class="custom-control-label" for="bp-owner-1">Sole Proprietorship</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-owner-2"
+                                            name="s4_business_ownership" value="Corporation">
+                                        <label class="custom-control-label" for="bp-owner-2">Corporation</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-owner-3"
+                                            name="s4_business_ownership" value="Partnership">
+                                        <label class="custom-control-label" for="bp-owner-3">Partnership</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-owner-4"
+                                            name="s4_business_ownership" value="LLC">
+                                        <label class="custom-control-label" for="bp-owner-4">LLC</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="">
+                                    <h6 class="mt-4 mb-2">Merchant type<span>*</span></h6>
+
+                                    <div class="custom-control radio d-inline">
+                                        <input required type="radio" class="form-check-input" id="bp-marchent-1"
+                                            name="s4_business_merchant_type" value="Retail">
+                                        <label class="custom-control-label" for="bp-marchent-1">Retail</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-marchent-2"
+                                            name="s4_business_merchant_type" value="Restaurant">
+                                        <label class="custom-control-label" for="bp-marchent-2">Restaurant</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-marchent-3"
+                                            name="s4_business_merchant_type" value="Wholesale">
+                                        <label class="custom-control-label" for="bp-marchent-3">Wholesale</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-marchent-4"
+                                            name="s4_business_merchant_type" value="Lodging">
+                                        <label class="custom-control-label" for="bp-marchent-4">Lodging</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-marchent-5"
+                                            name="s4_business_merchant_type" value="Service">
+                                        <label class="custom-control-label" for="bp-marchent-5">Service</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-marchent-6"
+                                            name="s4_business_merchant_type" value="Internet">
+                                        <label class="custom-control-label" for="bp-marchent-6">Internet</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-marchent-7"
+                                            name="s4_business_merchant_type" value="Home-based">
+                                        <label class="custom-control-label" for="bp-marchent-7">Home-based</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-marchent-8"
+                                            name="s4_business_merchant_type" value="Automotive">
+                                        <label class="custom-control-label" for="bp-marchent-8">Automotive</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-marchent-9"
+                                            name="s4_business_merchant_type" value="SIC code">
+                                        <label class="custom-control-label" for="bp-marchent-9">SIC code</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-marchent-10"
+                                            name="s4_business_merchant_type" value="Other">
+                                        <label class="custom-control-label" for="bp-marchent-10">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div>
+                                    <h6 class="mt-4 mb-2">Cards accepted<span>*</span></h6>
+                                    <div class="custom-control radio d-inline">
+                                        <input required type="radio" class="form-check-input" id="bp-cards-1"
+                                            name="s4_business_card_accepted" value="Visa">
+                                        <label class="custom-control-label" for="bp-cards-1">Visa</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-cards-2"
+                                            name="s4_business_card_accepted" value="MasterCard">
+                                        <label class="custom-control-label" for="bp-cards-2">MasterCard</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-cards-3"
+                                            name="s4_business_card_accepted" value="American Express">
+                                        <label class="custom-control-label" for="bp-cards-3">American Express</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-cards-4"
+                                            name="s4_business_card_accepted" value="Discover">
+                                        <label class="custom-control-label" for="bp-cards-4">Discover</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="bp-cards-5"
+                                            name="s4_business_card_accepted" value="PIN-based debit">
+                                        <label class="custom-control-label" for="bp-cards-5">PIN-based debit</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button class="btn btn-success submit-btn">Continue <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- step-4 end -->
+
+                <!-- step-5 start -->
+                <div class="px-3 auth">
+                    <div class="apply-form-header mt-5">
+                        <div class="apply-form-step">
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Start</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Business
+                                    Information</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Ownership</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Lease & Business
+                                    Profile</span>
+                            </div>
+                            <div class="step step-active">
+                                <p class="nom mx-auto">5</p></i> <span>Others</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">6</p><span>Signature & Authorization</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">7</p><span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                            style="width: 64.5%;height: 5px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+
+                    <div class="mt-5 step-form">
+                        <h5 class="mb-3">Existing Business Financing</h5>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label mb-1">Do you have existing business
+                                        financing?</label>
+                                    <input type="text" name="s5_business_financing" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="dba_name" class="form-label mb-1">If so, company</label>
+                                    <input type="text" name="s5_company" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label mb-1">Original balance</label>
+                                    <input type="text" name="s5_original_balance" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="dba_name" class="form-label mb-1">Current balance</label>
+                                    <input type="text" name="s5_current_balance" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="mb-3 mt-5">Business Revenue</h5>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label mb-1">Current processing company</label>
+                                    <input type="text" name="s5_current_processing_company"
+                                        class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="dba_name" class="form-label mb-1"># of terminals</label>
+                                    <input type="text" name="s5_terminals" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12 mb-4">
+                                <div class="">
+                                    <h6>Highest volume months <span>*</span></h6>
+                                    <div class="custom-control radio d-inline">
+                                        <input type="radio" class="form-check-input" id="jan"
+                                            name="s5_highest_volume_months" value="Jan">
+                                        <label class="custom-control-label" for="jan">Jan</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="feb"
+                                            name="s5_highest_volume_months" value="Feb">
+                                        <label class="custom-control-label" for="feb">Feb</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="mar"
+                                            name="s5_highest_volume_months" value="Mar">
+                                        <label class="custom-control-label" for="mar">Mar</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="apr"
+                                            name="s5_highest_volume_months" value="Apr">
+                                        <label class="custom-control-label" for="apr">Apr</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="may"
+                                            name="s5_highest_volume_months" value="May">
+                                        <label class="custom-control-label" for="may">May</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="jun"
+                                            name="s5_highest_volume_months" value="Jun">
+                                        <label class="custom-control-label" for="jun">Jun</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="jul"
+                                            name="s5_highest_volume_months" value="Jul">
+                                        <label class="custom-control-label" for="jul">Jul</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="Aug"
+                                            name="s5_highest_volume_months" value="Aug">
+                                        <label class="custom-control-label" for="Aug">Aug</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="Sep"
+                                            name="s5_highest_volume_months" value="Sep">
+                                        <label class="custom-control-label" for="Sep">Sep</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="Oct"
+                                            name="s5_highest_volume_months" value="Oct">
+                                        <label class="custom-control-label" for="Oct">Oct</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="nov"
+                                            name="s5_highest_volume_months" value="Nov">
+                                        <label class="custom-control-label" for="nov">Nov</label>
+                                    </div>
+
+                                    <div class="custom-control radio d-inline ms-3">
+                                        <input type="radio" class="form-check-input" id="dec"
+                                            name="s5_highest_volume_months" value="Dec">
+                                        <label class="custom-control-label" for="dec">Dec</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Average gross monthly sales</label>
+                                    <input type="text" name="s5_average_gross_monthly_sales"
+                                        class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Average ticket size</label>
+                                    <input type="text" name="s5_average_ticket_size" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Average Visa/MasterCard monthly sales</label>
+                                    <input type="text" name="s5_visa_masterCard_monthly_sales"
+                                        class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="mb-3 mt-5">Other Information</h5>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Is business seasonal or closed during part of the
+                                        year?</label>
+                                    <input type="text" name="s5_business_seasonal_closed" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">If so, details</label>
+                                    <input type="text" name="s5_business_seasonal_closed_details"
+                                        class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Is business for sale?</label>
+                                    <input type="text" name="s5_business_for_sale" class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">If so, details</label>
+                                    <input type="text" name="s5_business_for_sale_details"
+                                        class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Any open state/federal tax liens against business or
+                                        owner?</label>
+                                    <input type="text" name="s5_state_federal_tax_liens" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">If so, details</label>
+                                    <input type="text" name="s5_state_federal_tax_liens_details"
+                                        class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">Any lawsuits or judgments pending against business or
+                                        owner?</label>
+                                    <input type="text" name="s5_lawsuits_or_judgments" class="form-control shadow-sm"
+                                        id="">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1">If so, details</label>
+                                    <input type="text" name="s5_lawsuits_or_judgments_details"
+                                        class="form-control shadow-sm" id="">
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button class="btn btn-success submit-btn">Continue <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- step-5 end -->
+
+                <!-- step-6 start -->
+                <div class="px-3 auth">
+                    <div class="apply-form-header mt-5">
+                        <div class="apply-form-step">
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Start</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Business
+                                    Information</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Ownership</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Lease & Business
+                                    Profile</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p></i> <span>Others</span>
+                            </div>
+                            <div class="step step-active">
+                                <p class="nom mx-auto">6</p><span>Signature & Authorization</span>
+                            </div>
+                            <div class="step">
+                                <p class="nom mx-auto">7</p><span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                            style="width: 79%;height: 5px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <div class="mt-5 step-form">
+                        <h5 class="mb-3">Signature And Authorization To Obtain Information</h5>
+                        <p class="text-start">Authorization to Contact You By Phone: You authorize us, and our
+                            affiliates, agents, and
+                            independent contractors, to contact you at any telephone number you provide to us or from
+                            which you place a call to us, or any telephone number where we believe we may reach you,
+                            using any means of communication, including, but not limited to, calls or text messages to
+                            mobile, cellular, wireless or similar devices and calls or text messages using an automated
+                            telephone dialing system and/or artificial voices or prerecorded messages, even if you incur
+                            charges for receiving such communications. Authorization to Contact You By Other Means: You
+                            also agree that we and our affiliates, agents and independent contractors may use any other
+                            medium, as permitted by law and including, but not limited to, mail, e-mail and facsimile,
+                            to contact you
+                            <br>
+                            <br>
+                            By signing below, the Merchant and its owners/principals each: (1) certify that all
+                            information on and documents submitted in connection with this Prequalification Request are
+                            true, correct, and complete; and (2) acknowledge that the owners/principals are personally
+                            liable for Merchant; and (3) provide authorization and ‘written instruction’ to Credibly
+                            under the Fair Credit Reporting Act to obtain information from your personal and/or business
+                            credit profile as well as additional information from credit bureaus and other sources. This
+                            authorization and written instruction is to obtain information solely to conduct a
+                            prequalification for business funding, verify provided information and report fraudulent
+                            transactions. If you are requesting prequalification on-line, clicking “I AGREE” shall be
+                            written instructions with the same effect as your signature.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label mb-1">Owner signature</label>
+                                <input name="s6_owner_signature" type="file" class="form-control" id="inputGroupFile04"
+                                    aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label mb-1">Date</label>
+                                <input type="date" name="s6_owner_signature_date" class="form-control shadow-sm" id="">
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label mb-1">Co-Owner signature</label>
+                                <input name="s6_co_owner_signature" type="file" class="form-control"
+                                    id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <div class="mb-3">
+                                <label class="form-label mb-1">Date</label>
+                                <input type="date" name="s6_co_owner_signature_date" class="form-control shadow-sm"
+                                    id="">
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn btn-success submit-btn">Finish</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- step-6 end -->
+
+                <!-- step-7 start -->
+                <div class="px-3 auth">
+                    <div class="apply-form-header mt-5">
+                        <div class="apply-form-step">
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Start</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Business
+                                    Information</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Ownership</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Lease & Business
+                                    Profile</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p></i> <span>Others</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Signature & Authorization</span>
+                            </div>
+                            <div class="step step-complete">
+                                <p class="nom mx-auto"><i class="fa-solid fa-check"></i></p><span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress" style="height: 5px;">
+                        <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                            style="width: 100%;height: 5px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                    </div>
+                    <div class="mt-5 step-form">
+                        <h3 class="text-center">Thank You for your valuable information</h3>
+                    </div>
+                </div>
+                <!-- step-7 end -->
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+</body>
+
+</html>
