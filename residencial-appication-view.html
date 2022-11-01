@@ -1,1536 +1,1838 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/9c393abfb6.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9c393abfb6.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/CSS/styles.css" />
-    <link class="icon" rel="icon" type="image/x-icon" href="/Images/Icon/logo.ico">
+    <link
+      class="icon"
+      rel="icon"
+      type="image/x-icon"
+      href="/Images/Icon/logo.ico"
+    />
     <title>Commercial Loan</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="d-flex" id="wrapper">
-        <!-- Sidebar -->
-        <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 text-light primary-text fs-5 fw-bold text-uppercase">
-                Commercial Loan
-            </div>
-            <div class="card">
-                <img class="mx-auto" src="./Images/profile-pic.png" alt="" />
-                <h5>Elina Jahan Eli</h5>
-                <p>Customer Admin</p>
-            </div>
-
-            <hr class="side-hr" />
-            <div class="list-group list-group-flush my-3">
-                <a href="index.html" class="side-option"> <img class="me-2" src="./Images/SVG/dash.svg"
-                        alt="">Dashboard</a>
-            </div>
-            <hr class="side-hr" />
-            <div class="list-group list-group-flush my-3">
-                <a href="documents.html" class="side-option d-flex">
-                    <div><img class="me-2 doc" src="./Images/SVG/black-doc.svg" alt=""></div>
-                    <div>Documents</div>
-                </a>
-            </div>
-
-            <hr class="side-hr" />
-            <div class="list-group list-group-flush my-3">
-                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                    aria-controls="collapseExample" href="#" class="side-option d-flex">
-                    <div><img class="me-2 doc" src="./Images/SVG/business-loan-application.svg" alt=""></div>
-                    <div>Business Loan Application</div>
-                    <div class="drop-icon"><i class="fa-solid fa-caret-down"></i></div>
-                </a>
-                <div class="collapse px-3" id="collapseExample">
-                    <div class="business-loan-options">
-                        <a class="mt-1" href="./application-edit.html"><i class="fa-solid fa-pen-to-square"></i>
-                            Application Edit </a>
-                        <hr class="mt-2 mb-1">
-                        <a href="./application-view.html"><i class="fa-solid fa-file-contract me-1"></i> Application
-                            View</a>
-                    </div>
-                </div>
-            </div>
-            <hr class="side-hr" />
-            <div class="list-group list-group-flush my-3">
-                <a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
-                    aria-controls="collapseExample" href="#" class="side-option d-flex actv">
-                    <div><img class="me-2 doc" src="./Images/SVG/color-dollar.svg" alt=""></div>
-                    <div>Residential Loan Application</div>
-                    <div class="drop-icon"><i class="fa-solid fa-caret-down"></i></div>
-                </a>
-                <div class="collapse show px-3" id="collapseExample2">
-                    <div class="business-loan-options">
-                        <a class="mt-1" href="/residencial-application-edit.html"><i
-                                class="fa-solid fa-pen-to-square"></i>
-                            Application Edit</a>
-                        <hr class="mt-2 mb-1">
-                        <a href="/residencial-appication-view.html"><i class="fa-solid fa-file-contract me-1"></i>
-                            Application
-                            View<i class="fa-solid fa-circle ms-1"></i></a>
-                    </div>
-                </div>
-            </div>
-            <hr class="side-hr" />
-            <div class="list-group list-group-flush my-3">
-                <a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
-                    aria-controls="collapseExample" class="side-option d-flex">
-                    <div><img class="me-2 doc" src="./Images/SVG/commercial-loan-application.svg" alt=""></div>
-                    <div>Commercial Loan Application</div>
-                    <div class="drop-icon"><i class="fa-solid fa-caret-down"></i></div>
-                </a>
-                <div class="collapse px-3" id="collapseExample3">
-                    <div class="business-loan-options">
-                        <a class="mt-1" href="./commercial-application-edit.html"><i
-                                class="fa-solid fa-pen-to-square"></i>
-                            Application Edit</a>
-                        <hr class="mt-2 mb-1">
-                        <a href="./commercial-application-view.html">
-                            <i class="fa-solid fa-file-contract me-1"></i>
-                            Application
-                            View</a>
-                    </div>
-                </div>
-            </div>
-            <hr class="side-hr" />
+      <!-- Sidebar -->
+      <div class="bg-white" id="sidebar-wrapper">
+        <div
+          class="sidebar-heading text-center py-4 text-light primary-text fs-5 fw-bold text-uppercase"
+        >
+          Commercial Loan
         </div>
-        <!-- /#sidebar-wrapper -->
+        <div class="card">
+          <img class="mx-auto" src="./Images/profile-pic.png" alt="" />
+          <h5>Elina Jahan Eli</h5>
+          <p>Customer Admin</p>
+        </div>
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4">
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+        <hr class="side-hr" />
+        <div class="list-group list-group-flush my-3">
+          <a href="index.html" class="side-option">
+            <img class="me-2" src="./Images/SVG/dash.svg" alt="" />Dashboard</a
+          >
+        </div>
+        <hr class="side-hr" />
+        <div class="list-group list-group-flush my-3">
+          <a href="documents.html" class="side-option d-flex">
+            <div>
+              <img class="me-2 doc" src="./Images/SVG/black-doc.svg" alt="" />
+            </div>
+            <div>Documents</div>
+          </a>
+        </div>
+
+        <hr class="side-hr" />
+        <div class="list-group list-group-flush my-3">
+          <a
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            href="#"
+            class="side-option d-flex"
+          >
+            <div>
+              <img
+                class="me-2 doc"
+                src="./Images/SVG/business-loan-application.svg"
+                alt=""
+              />
+            </div>
+            <div>Business Loan Application</div>
+            <div class="drop-icon"><i class="fa-solid fa-caret-down"></i></div>
+          </a>
+          <div class="collapse px-3" id="collapseExample">
+            <div class="business-loan-options">
+              <a class="mt-1" href="./application-edit.html"
+                ><i class="fa-solid fa-pen-to-square"></i> Application Edit
+              </a>
+              <hr class="mt-2 mb-1" />
+              <a href="./application-view.html"
+                ><i class="fa-solid fa-file-contract me-1"></i> Application
+                View</a
+              >
+            </div>
+          </div>
+        </div>
+        <hr class="side-hr" />
+        <div class="list-group list-group-flush my-3">
+          <a
+            data-bs-toggle="collapse"
+            href="#collapseExample2"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            href="#"
+            class="side-option d-flex actv"
+          >
+            <div>
+              <img
+                class="me-2 doc"
+                src="./Images/SVG/color-dollar.svg"
+                alt=""
+              />
+            </div>
+            <div>Residential Loan Application</div>
+            <div class="drop-icon"><i class="fa-solid fa-caret-down"></i></div>
+          </a>
+          <div class="collapse show px-3" id="collapseExample2">
+            <div class="business-loan-options">
+              <a class="mt-1" href="/residencial-application-edit.html"
+                ><i class="fa-solid fa-pen-to-square"></i> Application Edit</a
+              >
+              <hr class="mt-2 mb-1" />
+              <a href="/residencial-appication-view.html"
+                ><i class="fa-solid fa-file-contract me-1"></i> Application
+                View<i class="fa-solid fa-circle ms-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="side-hr" />
+        <div class="list-group list-group-flush my-3">
+          <a
+            data-bs-toggle="collapse"
+            href="#collapseExample3"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            class="side-option d-flex"
+          >
+            <div>
+              <img
+                class="me-2 doc"
+                src="./Images/SVG/commercial-loan-application.svg"
+                alt=""
+              />
+            </div>
+            <div>Commercial Loan Application</div>
+            <div class="drop-icon"><i class="fa-solid fa-caret-down"></i></div>
+          </a>
+          <div class="collapse px-3" id="collapseExample3">
+            <div class="business-loan-options">
+              <a class="mt-1" href="./commercial-application-edit.html"
+                ><i class="fa-solid fa-pen-to-square"></i> Application Edit</a
+              >
+              <hr class="mt-2 mb-1" />
+              <a href="./commercial-application-view.html">
+                <i class="fa-solid fa-file-contract me-1"></i>
+                Application View</a
+              >
+            </div>
+          </div>
+        </div>
+        <hr class="side-hr" />
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4">
+          <div class="d-flex align-items-center">
+            <i
+              class="fas fa-align-left primary-text fs-4 me-3"
+              id="menu-toggle"
+            ></i>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="search-form" action="">
+              <input
+                class="px-3 py-2"
+                type="search"
+                placeholder="Search for results..."
+              />
+              <button class="px-3 py-2">
+                <i class="fa-solid fa-magnifying-glass mt-1"></i>
+              </button>
+            </form>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle second-text fw-bold"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user me-2"></i>John Doe
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a class="login-option" href="./login.html">Login</a>
+            <div class="icons">
+              <button class="ms-3" href="">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              <button class="ms-3" href="">
+                <i class="fa-solid fa-message"></i>
+              </button>
+              <button
+                class="ms-3 me-3"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                href=""
+              >
+                <i
+                  class="fa-solid fa-bell type="
+                  button
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Notification panel</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">...</div>
+        </div>
+
+        <div id="file-container" class="bg-body mt-4 ms-4 me-4 rounded p-3">
+          <h5>Information View</h5>
+          <hr class="" />
+          <div class="mt-2 px-3 mb-5">
+            <div class="row align-items-start">
+              <div class="col-xl-4">
+                <div
+                  class="nav flex-column nav-pills me-3"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    class="active d-flex info-step"
+                    id="v-pills-personal-information-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-personal-information"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-personal-information"
+                    aria-selected="true"
+                  >
+                    <p class="step-num">1</p>
+                    <p class="step-name">Personal Information</p>
+                  </button>
+                  <button
+                    class="d-flex info-step"
+                    id="v-pills-business-information-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-business-information"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-business-information"
+                    aria-selected="false"
+                  >
+                    <p class="step-num">2</p>
+                    <p class="step-name">Details</p>
+                  </button>
+                  <button
+                    class="d-flex info-step"
+                    id="v-pills-ownership-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-ownership"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-ownership"
+                    aria-selected="false"
+                  >
+                    <p class="step-num">3</p>
+                    <p class="step-name">Borrower Information</p>
+                  </button>
+                  <button
+                    class="d-flex info-step"
+                    id="v-pills-business-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-business-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-business-profile"
+                    aria-selected="false"
+                  >
+                    <p class="step-num">4</p>
+                    <p class="step-name">Co-Borrower Information</p>
+                  </button>
+                  <button
+                    class="d-flex info-step"
+                    id="v-pills-business-finance-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-business-finance"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-business-finance"
+                    aria-selected="false"
+                  >
+                    <p class="step-num">5</p>
+                    <p class="step-name">Assets and Liabilities</p>
+                  </button>
+                  <button
+                    class="d-flex info-step"
+                    id="v-pills-authorization-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-authorization"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-authorization"
+                    aria-selected="false"
+                  >
+                    <p class="step-num">6</p>
+                    <p class="step-name">Declarations</p>
+                  </button>
                 </div>
+              </div>
+              <div class="col-xl-8 rounded border mt-3 mb-5">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div
+                    class="tab-pane fade show active overflow-auto"
+                    id="v-pills-personal-information"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-personal-information-tab"
+                  >
+                    <div class="p-3">
+                      <div class="info-table">
+                        <h5>Personal Information</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>First Name*</td>
+                              <td>Nur</td>
+                            </tr>
+                            <tr>
+                              <td>Middle Initial</td>
+                              <td>Tesla</td>
+                            </tr>
+                            <tr>
+                              <td>Last Name</td>
+                              <td>Jr.</td>
+                            </tr>
+                            <tr>
+                              <td>Evening Or Cell Phone</td>
+                              <td>+8801760523833</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class="search-form" action="">
-                        <input class="px-3 py-2" type="search" placeholder="Search for results..." />
-                        <button class="px-3 py-2">
-                            <i class="fa-solid fa-magnifying-glass mt-1"></i>
+                      <div class="mb-4">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
                         </button>
-                    </form>
+                      </div>
 
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user me-2"></i>John Doe
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <a class="login-option" href="./login.html">Login</a>
-                    <div class="icons">
-                        <button class="ms-3" href=""><i class="fa-solid fa-phone"></i></button>
-                        <button class="ms-3" href=""><i class="fa-solid fa-message"></i></button>
-                        <button class="ms-3 me-3" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href=""><i
-                                class="fa-solid fa-bell type=" button data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i></button>
+                      <div class="info-table">
+                        <h5>Create Login</h5>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Email Address</td>
+                              <td>nurtesla@gmail.com</td>
+                            </tr>
+                            <tr>
+                              <td>Password</td>
+                              <td>Name</td>
+                            </tr>
+                            <tr>
+                              <td>How Did You Hear About Us?</td>
+                              <td>From Social Media</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
                     </div>
-                </div>
-            </nav>
+                  </div>
+                  <div
+                    class="tab-pane fade overflow-auto"
+                    id="v-pills-business-information"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-business-information-tab"
+                  >
+                    <div class="p-3">
+                      <div class="info-table">
+                        <h5>Loan Details</h5>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Legal Business Name</td>
+                              <td>nurtesla@gmail.com</td>
+                            </tr>
+                            <tr>
+                              <td>Loan Amount</td>
+                              <td>1233</td>
+                            </tr>
+                            <tr>
+                              <td>Interest Rate</td>
+                              <td>12</td>
+                            </tr>
+                            <tr>
+                              <td>Loan Term In Months</td>
+                              <td>12</td>
+                            </tr>
+                            <tr>
+                              <td>Amortization Type</td>
+                              <td>test_</td>
+                            </tr>
+                            <tr>
+                              <td>Mortgage will be*</td>
+                              <td>First Mortgage</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Notification panel</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    ...
-                </div>
-            </div>
+                      <div class="info-table">
+                        <h5>Property</h5>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Property Address</td>
+                              <td>tesla</td>
+                            </tr>
+                            <tr>
+                              <td>City</td>
+                              <td>Dhk</td>
+                            </tr>
+                            <tr>
+                              <td>State</td>
+                              <td>NY</td>
+                            </tr>
+                            <tr>
+                              <td>ZIP Code</td>
+                              <td>45278512</td>
+                            </tr>
+                            <tr>
+                              <td>Number Of Units</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <td>Purpose Of Loan</td>
+                              <td>Residential</td>
+                            </tr>
+                            <tr>
+                              <td>Property Will Be</td>
+                              <td>Residential</td>
+                            </tr>
+                            <tr>
+                              <td>Source Of Down Payment</td>
+                              <td>Bank</td>
+                            </tr>
+                            <tr>
+                              <td>Property Will Be Held In</td>
+                              <td>Bank</td>
+                            </tr>
+                            <tr>
+                              <td>Amount Existing Liens</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Purchase Price (Or Estimated Value)</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
 
-            <div id="file-container" class="bg-body mt-4 ms-4 me-4 rounded p-3">
-                <h5>Information View</h5>
-                <hr class="" />
-                <div class="mt-2 px-3 mb-5">
-                    <div class="row align-items-start">
-                        <div class="col-xl-4">
-                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                                aria-orientation="vertical">
-                                <button class="active d-flex info-step" id="v-pills-personal-information-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-personal-information" type="button"
-                                    role="tab" aria-controls="v-pills-personal-information" aria-selected="true">
-                                    <p class="step-num">1</p>
-                                    <p class="step-name">Personal Information</p>
-                                </button>
-                                <button class="d-flex info-step" id="v-pills-business-information-tab"
-                                    data-bs-toggle="pill" data-bs-target="#v-pills-business-information" type="button"
-                                    role="tab" aria-controls="v-pills-business-information" aria-selected="false">
-                                    <p class="step-num">2</p>
-                                    <p class="step-name">Details</p>
-                                </button>
-                                <button class="d-flex info-step" id="v-pills-ownership-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-ownership" type="button" role="tab"
-                                    aria-controls="v-pills-ownership" aria-selected="false">
-                                    <p class="step-num">3</p>
-                                    <p class="step-name">Borrower Information</p>
-                                </button>
-                                <button class="d-flex info-step" id="v-pills-business-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-business-profile" type="button" role="tab"
-                                    aria-controls="v-pills-business-profile" aria-selected="false">
-                                    <p class="step-num">4</p>
-                                    <p class="step-name">Co-Borrower Information</p>
-                                </button>
-                                <button class="d-flex info-step" id="v-pills-business-finance-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-business-finance" type="button" role="tab"
-                                    aria-controls="v-pills-business-finance" aria-selected="false">
-                                    <p class="step-num">5</p>
-                                    <p class="step-name">Assets and Liabilities
-                                    </p>
-                                </button>
-                                <button class="d-flex info-step" id="v-pills-authorization-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-authorization" type="button" role="tab"
-                                    aria-controls="v-pills-authorization" aria-selected="false">
-                                    <p class="step-num">6</p>
-                                    <p class="step-name">Declarations</p>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 rounded border mt-3 mb-5">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active overflow-auto" id="v-pills-personal-information" role="tabpanel"
-                                    aria-labelledby="v-pills-personal-information-tab">
-                                    <div class="p-3">
-                                        <div class="info-table">
-                                            <h5>Personal Information</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>First Name*</td>
-                                                        <td>Nur</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Middle Initial</td>
-                                                        <td>Tesla</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Last Name</td>
-                                                        <td>Jr.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Evening Or Cell Phone</td>
-                                                        <td>+8801760523833</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                        <div class="mb-4">
-                                            <button class="btn btn-success submit-btn"><i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table">
-                                            <h5>Create Login</h5>
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Email Address</td>
-                                                        <td>nurtesla@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Password</td>
-                                                        <td>Name</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>How Did You Hear About Us?</td>
-                                                        <td>From Social Media</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade overflow-auto" id="v-pills-business-information" role="tabpanel"
-                                    aria-labelledby="v-pills-business-information-tab">
-                                    <div class="p-3">
-                                        <div class="info-table">
-                                            <h5>Loan Details</h5>
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Legal Business Name</td>
-                                                        <td>nurtesla@gmail.com</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Loan Amount</td>
-                                                        <td>1233</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Interest Rate</td>
-                                                        <td>12</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Loan Term In Months</td>
-                                                        <td>12</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Amortization Type</td>
-                                                        <td>test_</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Mortgage will be*</td>
-                                                        <td>First Mortgage</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                        <div class="info-table">
-                                            <h5>Property</h5>
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Property Address</td>
-                                                        <td>tesla</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>City</td>
-                                                        <td>Dhk</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>State</td>
-                                                        <td>NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ZIP Code</td>
-                                                        <td>45278512</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Number Of Units</td>
-                                                        <td>3</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Purpose Of Loan</td>
-                                                        <td>Residential</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Property Will Be</td>
-                                                        <td>Residential</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Source Of Down Payment</td>
-                                                        <td>Bank</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Property Will Be Held In</td>
-                                                        <td>Bank</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Amount Existing Liens</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Purchase Price (Or Estimated Value)</td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade overflow-auto" id="v-pills-ownership" role="tabpanel"
-                                    aria-labelledby="v-pills-ownership-tab">
-                                    <div class="p-3">
-                                        <div class="info-table">
-                                            <h5>Borrower Information</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Social Security Number</td>
-                                                        <td>369</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Evening Phone</td>
-                                                        <td>455656454</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Date Of Birth</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Years In School</td>
-                                                        <td>19</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Marital Status</td>
-                                                        <td>Single</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Number Of Dependents</td>
-                                                        <td>4</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Is There A Co-Borrower?</td>
-                                                        <td>NO</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Current Address</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Street</td>
-                                                        <td>21</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>City</td>
-                                                        <td>DHK</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>State</td>
-                                                        <td>NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ZIP Code</td>
-                                                        <td>test</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Do You</td>
-                                                        <td>Own</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>How Long At Address (Year)</td>
-                                                        <td>test</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>How Long At Address (Month)</td>
-                                                        <td>test</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Income Sources</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Base Monthly Income</td>
-                                                        <td>2100</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Overtime</td>
-                                                        <td>10</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Bonuses</td>
-                                                        <td>1475</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Commissions</td>
-                                                        <td>47</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dividends/Interest</td>
-                                                        <td>69</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Other Income</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Income Source</td>
-                                                        <td>Business</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Income Amount</td>
-                                                        <td>10</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Current Employer</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Name</td>
-                                                        <td>Business</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Address</td>
-                                                        <td>10 NY City</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>City</td>
-                                                        <td>NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>State</td>
-                                                        <td>10 NY City</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Zip Code</td>
-                                                        <td>10 NY City</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Business Phone</td>
-                                                        <td>104757</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Are You Self-Employed</td>
-                                                        <td>Y</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Employed For</td>
-                                                        <td>ty</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Years Employed In This Line Of Work/Profession</td>
-                                                        <td>10</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Previous Employment</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Are You Employed In Your Current Position Less Than Two
-                                                            Years Or Currently Employed In More Than One Position?</td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Mailing Address</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Is Your Mailing Address Same As Current Address?</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Street</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>City</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>State</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ZIP Code</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Country</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Do You</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>How Long At Address</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade overflow-auto" id="v-pills-business-profile" role="tabpanel"
-                                    aria-labelledby="v-pills-business-profile-tab">
-                                    <div class="p-3">
-                                        <div class="info-table">
-                                            <h5>Co-Borrower Information</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>First Name</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Middle Initial</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Last Name</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Email</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Social Security Number</td>
-                                                        <td>369</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Evening Phone</td>
-                                                        <td>455656454</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Date Of Birth</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Years In School</td>
-                                                        <td>19</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Marital Status</td>
-                                                        <td>Single</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Number Of Dependents</td>
-                                                        <td>4</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Current Address</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Is Your Current Address Same As Borrower Address?</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Street</td>
-                                                        <td>21</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>City</td>
-                                                        <td>DHK</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>State</td>
-                                                        <td>NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ZIP Code</td>
-                                                        <td>test</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Do You</td>
-                                                        <td>Own</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>How Long At Address (Year)</td>
-                                                        <td>test</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>How Long At Address (Month)</td>
-                                                        <td>test</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Income Sources</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Base Monthly Income</td>
-                                                        <td>2100</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Overtime</td>
-                                                        <td>10</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Bonuses</td>
-                                                        <td>1475</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Commissions</td>
-                                                        <td>47</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dividends/Interest</td>
-                                                        <td>69</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Other Income</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Income Source</td>
-                                                        <td>Business</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Income Amount</td>
-                                                        <td>10</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Current Employer</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Name</td>
-                                                        <td>Business</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Address</td>
-                                                        <td>10 NY City</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>City</td>
-                                                        <td>NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>State</td>
-                                                        <td>10 NY City</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Zip Code</td>
-                                                        <td>10 NY City</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Business Phone</td>
-                                                        <td>104757</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Position</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Are You Self-Employed</td>
-                                                        <td>Y</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Employed For</td>
-                                                        <td>ty</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Years Employed In This Line Of Work/Profession</td>
-                                                        <td>10</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Previous Employment</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Are You Employed In Your Current Position Less Than Two
-                                                            Years Or Currently Employed In More Than One Position?</td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Mailing Address</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Is Your Mailing Address Same As Current Address?</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Street</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>City</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>State</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ZIP Code</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Country</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Do You</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>How Long At Address</td>
-                                                        <td>10 NY</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade overflow-auto" id="v-pills-business-finance" role="tabpanel"
-                                    aria-labelledby="v-pills-business-finance-tab">
-                                    <div class="p-3">
-                                        <div class="info-table">
-                                            <h5>Combined Monthly Expense</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Present Rent</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Proposed Rent</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Present First Mortgage (P&I)</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Proposed First Mortgage (P&I)</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Present Other Financing (P&I) </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Proposed Other Financing (P&I) </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Present Hazard Insurance </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Proposed Hazard Insurance </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Present Real Estate Taxes </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Proposed Real Estate Taxes </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Present Mortgage Insurance </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Proposed Mortgage Insurance </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Present Homeowner Assn. Dues </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Proposed Homeowner Assn. Dues </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Other Present Dues </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Other Proposed Dues </td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-
-                                        <div class="info-table mt-4">
-                                            <h5>Liabilities</h5>
-                                            <h6>Outstanding Credits</h6>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Name Of Creditor </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Type Of Liability </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Monthly Payment </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Unpaid Balance </td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h6>Real Estate</h6>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Do You Currently Own Real Estate? </td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h6>Liabilities</h6>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Alimony Payment </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Child Support Payment </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Separate Maintenance Payment </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Job Related Expense (Child Care, Union Dues, Etc.) </td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Assets</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Cash Deposit Toward Purchase</td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Checking and Savings Accounts</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Account/Asset Type </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Name Of Bank Or Credit Union </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Account Number </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Balance Or Value </td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Stocks and Bonds</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Asset Type</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Name Of Institution </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Value </td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Automobiles Owned</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Car Year </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Car Value </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Car Maker </td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Other Assets</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Asset Type </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Name Of Institution </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Value </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Life Insurance Net Cash Value </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Life Insurance Face Amount </td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Vested Interest In Retirement Fund (IRA, 401K, SEP) </td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade overflow-auto" id="v-pills-authorization" role="tabpanel"
-                                    aria-labelledby="v-pills-authorization-tab">
-                                    <div class="p-3">
-                                        <div class="info-table">
-                                            <h5>Declarations</h5>
-                                            <table class="table">
-                                                <thead class="color-combo-5">
-                                                    <tr>
-                                                        <th class="fw-bold" style="width: 50%;">Field Name</th>
-                                                        <th class="fw-bold" colspan="2">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="width: 50%;">Are there any outstanding judgments
-                                                            against you?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Have you been declared bankrupt within
-                                                            the last seven years?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Have you had property foreclosed upon or
-                                                            given title or deed in lieu thereof in the last seven years?
-                                                        </td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Are you a party to a lawsuit?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Have you directly or indirectly been
-                                                            obligated on any loan which resulted in foreclosure,
-                                                            transfer of title in lieu of foreclosure, or judgment? (This
-                                                            would include such loans as home mortgage loans, SBA loans,
-                                                            home improvement loans, educational loans, manufactured
-                                                            (mobile) home loans, any mortgage, financial obligation,
-                                                            bond, or loan guarantee.)</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Are you presently delinquent or in
-                                                            default on any federal debt or any other loan, mortgage,
-                                                            financial obligation, bond, or loan guarantee?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Are you obligated to pay alimony, child
-                                                            support, or separate maintenance?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Is any part of the down payment
-                                                            borrowed?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Are you a co-maker or endorser on a
-                                                            note?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Are you a U.S. citizen?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Are you a permanent resident alien?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Do you intend to occupy the property as
-                                                            your primary residence?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Have you had an ownership interest in a
-                                                            property in the last three years? (If Yes, please complete
-                                                            questions 1 and 2 below.)</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">What type of property did you own?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">How did you hold title to the home?</td>
-                                                        <td>Borrower: </td>
-                                                        <td>Co-Borrower: </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Comment</td>
-                                                        <td colspan="2"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Demographic Information Of
-                                                Borrower</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="width: 50%;">Ethnicity</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Race</td>
-                                                        <td> </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Sex</td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-
-                                        <div class="info-table mt-4">
-                                            <h5>Demographic Information Of Co-Borrower</h5>
-                                            <table class="table">
-                                                <thead class="border">
-                                                    <tr>
-                                                        <th class="fw-bold" scope="col">Field Name</th>
-                                                        <th width="50%" class="fw-bold" scope="col">Value</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td style="width: 50%;">Ethnicity</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Race</td>
-                                                        <td> </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="width: 50%;">Sex</td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="mb-2">
-                                            <button class="btn btn-success submit-btn"> <i
-                                                    class="fa-solid fa-pen-to-square me-2"></i>
-                                                Edit Information</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
                     </div>
+                  </div>
+                  <div
+                    class="tab-pane fade overflow-auto"
+                    id="v-pills-ownership"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-ownership-tab"
+                  >
+                    <div class="p-3">
+                      <div class="info-table">
+                        <h5>Borrower Information</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Social Security Number</td>
+                              <td>369</td>
+                            </tr>
+                            <tr>
+                              <td>Evening Phone</td>
+                              <td>455656454</td>
+                            </tr>
+                            <tr>
+                              <td>Date Of Birth</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Years In School</td>
+                              <td>19</td>
+                            </tr>
+                            <tr>
+                              <td>Marital Status</td>
+                              <td>Single</td>
+                            </tr>
+                            <tr>
+                              <td>Number Of Dependents</td>
+                              <td>4</td>
+                            </tr>
+                            <tr>
+                              <td>Is There A Co-Borrower?</td>
+                              <td>NO</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Current Address</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Street</td>
+                              <td>21</td>
+                            </tr>
+                            <tr>
+                              <td>City</td>
+                              <td>DHK</td>
+                            </tr>
+                            <tr>
+                              <td>State</td>
+                              <td>NY</td>
+                            </tr>
+                            <tr>
+                              <td>ZIP Code</td>
+                              <td>test</td>
+                            </tr>
+                            <tr>
+                              <td>Do You</td>
+                              <td>Own</td>
+                            </tr>
+                            <tr>
+                              <td>How Long At Address (Year)</td>
+                              <td>test</td>
+                            </tr>
+                            <tr>
+                              <td>How Long At Address (Month)</td>
+                              <td>test</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Income Sources</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Base Monthly Income</td>
+                              <td>2100</td>
+                            </tr>
+                            <tr>
+                              <td>Overtime</td>
+                              <td>10</td>
+                            </tr>
+                            <tr>
+                              <td>Bonuses</td>
+                              <td>1475</td>
+                            </tr>
+                            <tr>
+                              <td>Commissions</td>
+                              <td>47</td>
+                            </tr>
+                            <tr>
+                              <td>Dividends/Interest</td>
+                              <td>69</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Other Income</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Income Source</td>
+                              <td>Business</td>
+                            </tr>
+                            <tr>
+                              <td>Income Amount</td>
+                              <td>10</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Current Employer</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Name</td>
+                              <td>Business</td>
+                            </tr>
+                            <tr>
+                              <td>Address</td>
+                              <td>10 NY City</td>
+                            </tr>
+                            <tr>
+                              <td>City</td>
+                              <td>NY</td>
+                            </tr>
+                            <tr>
+                              <td>State</td>
+                              <td>10 NY City</td>
+                            </tr>
+                            <tr>
+                              <td>Zip Code</td>
+                              <td>10 NY City</td>
+                            </tr>
+                            <tr>
+                              <td>Business Phone</td>
+                              <td>104757</td>
+                            </tr>
+                            <tr>
+                              <td>Are You Self-Employed</td>
+                              <td>Y</td>
+                            </tr>
+                            <tr>
+                              <td>Employed For</td>
+                              <td>ty</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Years Employed In This Line Of Work/Profession
+                              </td>
+                              <td>10</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Previous Employment</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                Are You Employed In Your Current Position Less
+                                Than Two Years Or Currently Employed In More
+                                Than One Position?
+                              </td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Mailing Address</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                Is Your Mailing Address Same As Current Address?
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Street</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>City</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>State</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>ZIP Code</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>Country</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>Do You</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>How Long At Address</td>
+                              <td>10 NY</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade overflow-auto"
+                    id="v-pills-business-profile"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-business-profile-tab"
+                  >
+                    <div class="p-3">
+                      <div class="info-table">
+                        <h5>Co-Borrower Information</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>First Name</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Middle Initial</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Last Name</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Email</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Social Security Number</td>
+                              <td>369</td>
+                            </tr>
+                            <tr>
+                              <td>Evening Phone</td>
+                              <td>455656454</td>
+                            </tr>
+                            <tr>
+                              <td>Date Of Birth</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Years In School</td>
+                              <td>19</td>
+                            </tr>
+                            <tr>
+                              <td>Marital Status</td>
+                              <td>Single</td>
+                            </tr>
+                            <tr>
+                              <td>Number Of Dependents</td>
+                              <td>4</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Current Address</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                Is Your Current Address Same As Borrower
+                                Address?
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Street</td>
+                              <td>21</td>
+                            </tr>
+                            <tr>
+                              <td>City</td>
+                              <td>DHK</td>
+                            </tr>
+                            <tr>
+                              <td>State</td>
+                              <td>NY</td>
+                            </tr>
+                            <tr>
+                              <td>ZIP Code</td>
+                              <td>test</td>
+                            </tr>
+                            <tr>
+                              <td>Do You</td>
+                              <td>Own</td>
+                            </tr>
+                            <tr>
+                              <td>How Long At Address (Year)</td>
+                              <td>test</td>
+                            </tr>
+                            <tr>
+                              <td>How Long At Address (Month)</td>
+                              <td>test</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Income Sources</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Base Monthly Income</td>
+                              <td>2100</td>
+                            </tr>
+                            <tr>
+                              <td>Overtime</td>
+                              <td>10</td>
+                            </tr>
+                            <tr>
+                              <td>Bonuses</td>
+                              <td>1475</td>
+                            </tr>
+                            <tr>
+                              <td>Commissions</td>
+                              <td>47</td>
+                            </tr>
+                            <tr>
+                              <td>Dividends/Interest</td>
+                              <td>69</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Other Income</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Income Source</td>
+                              <td>Business</td>
+                            </tr>
+                            <tr>
+                              <td>Income Amount</td>
+                              <td>10</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Current Employer</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Name</td>
+                              <td>Business</td>
+                            </tr>
+                            <tr>
+                              <td>Address</td>
+                              <td>10 NY City</td>
+                            </tr>
+                            <tr>
+                              <td>City</td>
+                              <td>NY</td>
+                            </tr>
+                            <tr>
+                              <td>State</td>
+                              <td>10 NY City</td>
+                            </tr>
+                            <tr>
+                              <td>Zip Code</td>
+                              <td>10 NY City</td>
+                            </tr>
+                            <tr>
+                              <td>Business Phone</td>
+                              <td>104757</td>
+                            </tr>
+                            <tr>
+                              <td>Position</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Are You Self-Employed</td>
+                              <td>Y</td>
+                            </tr>
+                            <tr>
+                              <td>Employed For</td>
+                              <td>ty</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Years Employed In This Line Of Work/Profession
+                              </td>
+                              <td>10</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Previous Employment</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                Are You Employed In Your Current Position Less
+                                Than Two Years Or Currently Employed In More
+                                Than One Position?
+                              </td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Mailing Address</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                Is Your Mailing Address Same As Current Address?
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Street</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>City</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>State</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>ZIP Code</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>Country</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>Do You</td>
+                              <td>10 NY</td>
+                            </tr>
+                            <tr>
+                              <td>How Long At Address</td>
+                              <td>10 NY</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade overflow-auto"
+                    id="v-pills-business-finance"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-business-finance-tab"
+                  >
+                    <div class="p-3">
+                      <div class="info-table">
+                        <h5>Combined Monthly Expense</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Present Rent</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Proposed Rent</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Present First Mortgage (P&I)</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Proposed First Mortgage (P&I)</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Present Other Financing (P&I)</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Proposed Other Financing (P&I)</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Present Hazard Insurance</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Proposed Hazard Insurance</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Present Real Estate Taxes</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Proposed Real Estate Taxes</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Present Mortgage Insurance</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Proposed Mortgage Insurance</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Present Homeowner Assn. Dues</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Proposed Homeowner Assn. Dues</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Other Present Dues</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Other Proposed Dues</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Liabilities</h5>
+                        <h6>Outstanding Credits</h6>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Name Of Creditor</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Type Of Liability</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Monthly Payment</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Unpaid Balance</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h6>Real Estate</h6>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Do You Currently Own Real Estate?</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h6>Liabilities</h6>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Alimony Payment</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Child Support Payment</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Separate Maintenance Payment</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Job Related Expense (Child Care, Union Dues,
+                                Etc.)
+                              </td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Assets</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Cash Deposit Toward Purchase</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Checking and Savings Accounts</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Account/Asset Type</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Name Of Bank Or Credit Union</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Account Number</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Balance Or Value</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Stocks and Bonds</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Asset Type</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Name Of Institution</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Value</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Automobiles Owned</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Car Year</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Car Value</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Car Maker</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Other Assets</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Asset Type</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Name Of Institution</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Value</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Life Insurance Net Cash Value</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>Life Insurance Face Amount</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Vested Interest In Retirement Fund (IRA, 401K,
+                                SEP)
+                              </td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade overflow-auto"
+                    id="v-pills-authorization"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-authorization-tab"
+                  >
+                    <div class="p-3">
+                      <div class="info-table">
+                        <h5>Declarations</h5>
+                        <table class="table">
+                          <thead class="color-combo-5">
+                            <tr>
+                              <th class="fw-bold" style="width: 50%">
+                                Field Name
+                              </th>
+                              <th class="fw-bold" colspan="2">Value</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="width: 50%">
+                                Are there any outstanding judgments against you?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Have you been declared bankrupt within the last
+                                seven years?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Have you had property foreclosed upon or given
+                                title or deed in lieu thereof in the last seven
+                                years?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Are you a party to a lawsuit?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Have you directly or indirectly been obligated
+                                on any loan which resulted in foreclosure,
+                                transfer of title in lieu of foreclosure, or
+                                judgment? (This would include such loans as home
+                                mortgage loans, SBA loans, home improvement
+                                loans, educational loans, manufactured (mobile)
+                                home loans, any mortgage, financial obligation,
+                                bond, or loan guarantee.)
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Are you presently delinquent or in default on
+                                any federal debt or any other loan, mortgage,
+                                financial obligation, bond, or loan guarantee?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Are you obligated to pay alimony, child support,
+                                or separate maintenance?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Is any part of the down payment borrowed?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Are you a co-maker or endorser on a note?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Are you a U.S. citizen?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Are you a permanent resident alien?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Do you intend to occupy the property as your
+                                primary residence?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                Have you had an ownership interest in a property
+                                in the last three years? (If Yes, please
+                                complete questions 1 and 2 below.)
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                What type of property did you own?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">
+                                How did you hold title to the home?
+                              </td>
+                              <td>Borrower:</td>
+                              <td>Co-Borrower:</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Comment</td>
+                              <td colspan="2"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Demographic Information Of Borrower</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="width: 50%">Ethnicity</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Race</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Sex</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+
+                      <div class="info-table mt-4">
+                        <h5>Demographic Information Of Co-Borrower</h5>
+                        <table class="table">
+                          <thead class="border">
+                            <tr>
+                              <th class="fw-bold" scope="col">Field Name</th>
+                              <th width="50%" class="fw-bold" scope="col">
+                                Value
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="width: 50%">Ethnicity</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Race</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Sex</td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="mb-2">
+                        <button class="btn btn-success submit-btn">
+                          <i class="fa-solid fa-pen-to-square me-2"></i> Edit
+                          Information
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        var el = document.getElementById("wrapper");
-        var toggleButton = document.getElementById("menu-toggle");
+      var el = document.getElementById("wrapper");
+      var toggleButton = document.getElementById("menu-toggle");
 
-        toggleButton.onclick = function () {
-            el.classList.toggle("toggled");
-        };
+      toggleButton.onclick = function () {
+        el.classList.toggle("toggled");
+      };
     </script>
-</body>
-
+  </body>
 </html>
