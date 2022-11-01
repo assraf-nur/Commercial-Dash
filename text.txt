@@ -1,26 +1,10 @@
-                <button
-                    class="d-flex info-step"
-                    id="v-pills-authorization-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-business"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-business"
-                    aria-selected="false"
-                  >
-                    <p class="step-num">6</p>
-                    <p class="step-name">Business Information</p>
-                  </button>
-                  <button
-                    class="d-flex info-step"
-                    id="v-pills-authorization-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#v-pills-authorization"
-                    type="button"
-                    role="tab"
-                    aria-controls="v-pills-authorization"
-                    aria-selected="false"
-                  >
-                    <p class="step-num">6</p>
-                    <p class="step-name">Signature & Authorization</p>
-                  </button>
+<button class="d-flex info-step" id="v-pills-authorization-tab" data-bs-toggle="pill"
+  data-bs-target="#v-pills-authorization" type="button" role="tab" aria-controls="v-pills-authorization"
+  aria-selected="false">
+  <p class="step-num">7</p>
+  <p class="step-name">Signature & Authorization</p>
+</button>
+
+information
+
+business
